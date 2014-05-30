@@ -1,0 +1,24 @@
+2014-04-23T09:44:48+02:00 INFO (6): FirePHP logging enabled
+2014-04-23T09:44:48+02:00 INFO (6): Album\Controller\AlbumController::indexAction
+2014-04-23T09:44:48+02:00 DEBUG (7): This message will go also to FirePHP
+2014-04-23T09:45:34+02:00 INFO (6): FirePHP logging enabled
+2014-04-23T09:45:34+02:00 INFO (6): Album\Controller\AlbumController::indexAction
+2014-04-23T09:45:34+02:00 DEBUG (7): This message will go also to FirePHP
+2014-04-23T09:57:52+02:00 INFO (6): FirePHP logging enabled
+2014-04-23T09:57:52+02:00 INFO (6): Album\Controller\AlbumController::indexAction
+2014-04-23T09:57:52+02:00 DEBUG (7): This message will go also to FirePHP
+2014-04-23T09:58:21+02:00 INFO (6): FirePHP logging enabled
+2014-04-23T09:58:21+02:00 INFO (6): Album\Controller\AlbumController::indexAction
+2014-04-23T09:58:21+02:00 INFO (6): FirePHP logging enabled
+2014-04-23T09:58:21+02:00 INFO (6): Album\Controller\AlbumController::indexAction
+2014-04-23T09:58:21+02:00 DEBUG (7): This message will go also to FirePHP
+2014-04-23T09:58:21+02:00 DEBUG (7): This message will go also to FirePHP
+2014-04-23T10:00:29+02:00 INFO (6): FirePHP logging enabled
+2014-04-23T10:00:29+02:00 INFO (6): Album\Controller\AlbumController::indexAction
+2014-04-23T10:00:29+02:00 DEBUG (7): This message will go also to FirePHP
+2014-04-23T10:00:42+02:00 INFO (6): FirePHP logging enabled
+2014-04-23T10:00:42+02:00 INFO (6): Album\Controller\AlbumController::indexAction
+2014-04-23T10:00:42+02:00 DEBUG (7): This message will go also to FirePHP
+2014-04-23T10:01:32+02:00 INFO (6): FirePHP logging enabled
+2014-04-23T10:01:32+02:00 INFO (6): Album\Controller\AlbumController::indexAction
+2014-04-23T10:01:32+02:00 DEBUG (7): This message will go also to FirePHP

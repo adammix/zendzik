@@ -1,0 +1,87 @@
+<?php
+
+$title = 'Dodawanie nowego atrybutu';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<div class="form-group">
+<?php
+	$form->setAttribute('action', $this->url('attribute', array('action' => 'add')));
+	$form->get('submit')->setValue('Zapisz');
+	$form->prepare();
+
+	echo $this->form()->openTag($form);
+	echo $this->formHidden($form->get('id'));
+	echo $this->formRow($form->get('attribute_name'));
+	echo $this->formRow($form->get('attribute_desc'));
+	echo $this->formRow($form->get('attribute_type'));
+	echo $this->formRow($form->get('attribute_options'));
+	echo '<div class="option_container">';
+	echo '<span class="add_field"><i class="btn btn-success btn-circle fa fa-plus-square fa-fw"></i>Dodaj nową wartość</span>';
+	echo '</div>';
+	echo $this->formSubmit($form->get('submit'));
+	echo $this->form()->closeTag();
+	
+?>
+<?php
+	//echo var_dump($this->unserialized);
+?>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+	/**
+	 * ON/OFF pojemnik na formularz dla atrybutu opcjonalnego
+	 * */
+		
+		$( 'select[name="attribute_type"]' ).on("change", function() {
+			if($(this).val() == 1){
+				$( '.option_container' ).slideDown('fast');
+			}else{
+				$( '.option_container' ).slideUp('fast');
+			}
+		});
+		$( 'select[name="attribute_type"]' ).trigger('change');
+		
+	/**
+	 * Dodanie dodatkowego pola formularz dla opcji atrybutu
+	 * */
+		var input_counter = 0;
+		$( '.add_field' ).on("click", function() {
+			++input_counter;
+			$(this).before('<div class="input_container"><input type="text" value="" class="form-control" placeholder="wprowadź wartość atrybutu..." name="new'+ input_counter +'"><span class="remove_button btn btn-danger btn-circle fa fa-ban fa-fw"></span></div>');
+		});
+		
+	/**
+	 * Usunięcie pola formularza dla opcji atrybutu
+	 * */
+		
+		$( '.option_container' ).on("click", ".remove_button", function() {
+			var result = confirm("Napewno chcesz usunąć tą wartość");
+			if (result==true) {
+			    $(this).parent().remove();
+			}
+			
+		});
+		
+	/**
+	 * Przechwycenie akcji submit na formularzu i serializacja danych z pól dodatkowych formularza na string
+	 */
+
+		$('#AddAttribute').on('submit', function(e) {
+	        if($(this).find('select[name="attribute_type"]').val() == true){
+	        	
+	        	var data = new Object();
+	        	var serialized = '';
+	        	$(this).find('.option_container input').each(function(index, elem){
+	        		data[elem.name] = elem.value;
+	        	});
+	        	serialized = JSON.stringify(data);
+				$( 'input[name="attribute_options"]' ).val(serialized);
+				//e.preventDefault();
+				
+	        }
+    	});
+
+	});
+</script>
+</div>

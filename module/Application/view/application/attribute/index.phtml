@@ -1,0 +1,32 @@
+<div class="row">
+<div class="action_buttons">
+	<a class="" href="<?php echo $this->url('attribute', array('action'=>'add'));?>"><i class="btn btn-success btn-circle fa fa-plus-square fa-fw"></i> Nowy Atrybut</a>
+</div>
+<?php if (isset($attributes)) : ?>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nazwa</th>
+                        <th>Opis</th>
+                        <th>Typ</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                <?php foreach($attributes as $attribute): ?>
+                    <tbody>
+                    <tr>
+                        <td><?php echo $attribute->getId(); ?></td>
+                        <td><?php echo $attribute->getName(); ?></td>
+                        <td><?php  echo $attribute->getDesc();  ?></td>
+                        <td><?php echo $attribute->getType(); ?></td>
+                        <td>
+                            <a href="<?php echo $this->url('attribute', array('action'=>'edit', 'id' => $attribute->getId()));?>"><i class="btn btn-warning btn-circle fa fa-pencil fa-fw"></i></a>
+                            <a href="<?php echo $this->url('attribute', array('action'=>'delete', 'id' => $attribute->getId()));?>"><i class="btn btn-danger btn-circle fa fa-ban fa-fw"></i></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                <?php endforeach; ?>
+                </table>
+                <?php endif; ?>
+</div>

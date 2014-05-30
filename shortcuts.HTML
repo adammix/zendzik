@@ -1,0 +1,20 @@
+
+<!-- GENERUJE GETTERY I SETTERY DLA ENTITYS --> 
+
+vendor\bin\doctrine-module orm:generate-entities module\Application\src\ --generate-annotations=true
+
+<!-- MAPUJE BAZE DANYCH DO ENTITYS --> 
+
+vendor\bin\doctrine-module orm:convert-mapping --namespace="Application\Entity\\" --force  --from-database annotation module\Application\src\
+
+<!-- ZAPISUJE STRUKTURE ENTITYS DO BAZY DANYCH --> 
+
+vendor\bin\doctrine-module orm:schema-tool:update --force
+
+<!-- SPRAWDZA ZGODNOŚĆ BAZY DANYCH Z ENTITYS --> 
+
+vendor\bin\doctrine-module orm:validate-schema
+
+
+
+

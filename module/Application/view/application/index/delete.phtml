@@ -1,0 +1,10 @@
+<?php
+
+$title = 'Usunięcie użytkownika';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+Czy jesteś tak zupełnie absolutnie pewien że chcesz usunąć użytkownika <?php echo $user->getLogin(); ?>??<br/>
+<form method="post">
+  <input class="btn btn-outline btn-primary btn-lg" type="submit" value="Usuń">
+</form>
