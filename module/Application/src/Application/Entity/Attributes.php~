@@ -122,6 +122,6 @@ class Attributes
      */
     public function getType()
     {
-        return $this->type;
+        return (int)$this->type;
     }
 }

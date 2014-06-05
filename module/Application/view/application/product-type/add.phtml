@@ -1,0 +1,120 @@
+<?php
+	$title = 'Dodawanie nowego typu Produktu';
+	$this->headTitle($title);
+
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<div class="form-group">
+<?php
+	$form->setAttribute('action', $this->url('products-type', array('action' => 'add')));
+	$form->get('submit')->setValue('Zapisz');
+	$form->prepare();
+
+	echo $this->form()->openTag($form);
+	echo $this->formHidden($form->get('id'));
+	echo $this->formRow($form->get('name'));
+	echo $this->formSubmit($form->get('submit'));
+	echo $this->form()->closeTag();
+	
+?>
+</div>
+<div class="categories_tree">
+	<div id="jstree"></div>
+	<div class="tree_buttons">
+		<span class="btn btn-success" type="button" onclick="category_create();"><i class="glyphicon glyphicon-asterisk"></i>Dodaj</span>
+		<span class="btn btn-warning" type="button" onclick="category_rename();"><i class="glyphicon glyphicon-pencil"></i>Edytuj</span>
+		<span class="btn btn-danger" type="button" onclick="category_delete();"><i class="glyphicon glyphicon-remove"></i>Uśuń</span>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	//dodanie kategorii
+	function category_create() {
+		var ref = $('#jstree').jstree(true),
+		sel = ref.get_selected();
+		if(!sel.length) { return false; }
+		sel = sel[0];
+		sel = ref.create_node(sel, {"text" : "Nowa kategoria" ,"type":"root"});
+		if(sel) {
+			ref.edit(sel);
+		}
+	};
+	//zmiana nazwy kategorii
+	function category_rename() {
+		var ref = $('#jstree').jstree(true),
+		sel = ref.get_selected();
+		if(!sel.length) { return false; }
+		sel = sel[0];
+		ref.edit(sel);
+	};
+	//usuniecie kategorii
+	/**
+	 * @todo add username when user has been logged in
+	 */
+	function category_delete() {
+		var result = confirm("Czy jesteś absolutnie pewny tego co robisz?");
+		if (result==true) {
+		    var ref = $('#jstree').jstree(true),
+			sel = ref.get_selected();
+			if(!sel.length) { return false; }
+			ref.delete_node(sel);
+		}
+	}; 
+	
+	$(function () {
+		//wyszukiwarka
+		// var to = false;
+		// $('#demo_q').keyup(function () {
+			// if(to) { clearTimeout(to); }
+			// to = setTimeout(function () {
+				// var v = $('#demo_q').val();
+				// $('#jstree_demo').jstree(true).search(v);
+			// }, 250);
+		// });
+		
+		//tworzenie nowego obiektu kategorii
+		$('#jstree').jstree({
+		  "core" : {
+		    "animation" : 0,
+		    "check_callback" : true,
+		    "themes" : { "stripes" : true },
+		    'data' : [
+		       {
+		         'text' : 'Kategorie',
+		         'state' : {
+		           'opened' : true,
+		           'selected' : true,
+		         },
+		         "type":"#"
+		      }
+		    ]
+		  },
+		  "types" : {
+		    "#" : {
+		      	"max_children" : 10, 
+		      	"max_depth" : 4, 
+		      	"valid_children" : ["root", "default"],
+		      	"icon" : "glyphicon glyphicon-glass",
+		    },
+		    "root" : {
+		      	"icon" : "glyphicon glyphicon-film",
+		      	"valid_children" : ["root", "default"]
+		    },
+		    "default" : {
+		    	"icon" : "glyphicon glyphicon-heart",
+		      	"valid_children" : ["default","default"]
+		    },
+		    "file" : {
+		      	"icon" : "glyphicon glyphicon-book",
+		      	"valid_children" : []
+		    }
+		  },
+		  "plugins" : [
+		    "contextmenu", "dnd",
+		    "state", "types", "wholerow"
+		  ]
+		});
+	}); 
+
+</script>

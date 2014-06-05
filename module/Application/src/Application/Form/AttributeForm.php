@@ -74,10 +74,10 @@ class AttributeForm extends Form
 		));
 	}
 	public function populateForm($attribute){
-		$this->get('id')->setValue($user->getId());
-		$this->get('user_login')->setValue($user->getLogin());
-		$this->get('user_name')->setValue($user->getFirstname());
-		$this->get('user_lastname')->setValue($user->getLastname());
-		$this->get('password')->setValue($user->getPassword());
+		$this->get('id')->setValue($attribute->getId());
+		$this->get('user_login')->setValue($attribute->getLogin());
+		$this->get('user_name')->setValue($attribute->getFirstname());
+		$this->get('user_lastname')->setValue($attribute->getLastname());
+		$this->get('password')->setValue($attribute->getPassword());
 	}
 }

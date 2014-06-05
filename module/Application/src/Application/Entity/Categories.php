@@ -5,12 +5,12 @@ namespace Application\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * AttributesGroups
+ * Categories
  *
- * @ORM\Table(name="attributes_groups", indexes={@ORM\Index(name="fk_attributes_groups_product_types1_idx", columns={"id_product_types"}), @ORM\Index(name="fk_attributes_groups_attributes1_idx", columns={"id_attributes"})})
+ * @ORM\Table(name="categories")
  * @ORM\Entity
  */
-class AttributesGroups
+class Categories
 {
     /**
      * @var integer
@@ -22,26 +22,33 @@ class AttributesGroups
     private $id;
 
     /**
-     * @var \Application\Entity\Attributes
+     * @var string
      *
-     * @ORM\ManyToOne(targetEntity="Application\Entity\Attributes")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_attributes", referencedColumnName="id")
-     * })
+     * @ORM\Column(name="name", type="string", length=100, nullable=false)
      */
-    private $idAttributes;
+    private $name;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="parentId", type="integer", nullable=false)
+     */
+    private $parentId;
+	
+	/**
      * @var \Application\Entity\ProductTypes
      *
      * @ORM\ManyToOne(targetEntity="Application\Entity\ProductTypes")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_product_types", referencedColumnName="id")
+     *   @ORM\JoinColumn(name="idProductTypes", referencedColumnName="id")
      * })
      */
     private $idProductTypes;
+	
 
 
+
+    
 
     /**
      * Get id
@@ -54,33 +61,56 @@ class AttributesGroups
     }
 
     /**
-     * Set idAttributes
+     * Set name
      *
-     * @param \Application\Entity\Attributes $idAttributes
-     * @return AttributesGroups
+     * @param string $name
+     * @return Categories
      */
-    public function setIdAttributes(\Application\Entity\Attributes $idAttributes = null)
+    public function setName($name)
     {
-        $this->idAttributes = $idAttributes;
+        $this->name = $name;
 
         return $this;
     }
 
     /**
-     * Get idAttributes
+     * Get name
      *
-     * @return \Application\Entity\Attributes 
+     * @return string 
      */
-    public function getIdAttributes()
+    public function getName()
     {
-        return $this->idAttributes;
+        return $this->name;
+    }
+
+    /**
+     * Set parentId
+     *
+     * @param integer $parentId
+     * @return Categories
+     */
+    public function setParentId($parentId)
+    {
+        $this->parentId = $parentId;
+
+        return $this;
+    }
+
+    /**
+     * Get parentId
+     *
+     * @return integer 
+     */
+    public function getParentId()
+    {
+        return $this->parentId;
     }
 
     /**
      * Set idProductTypes
      *
      * @param \Application\Entity\ProductTypes $idProductTypes
-     * @return AttributesGroups
+     * @return Categories
      */
     public function setIdProductTypes(\Application\Entity\ProductTypes $idProductTypes = null)
     {

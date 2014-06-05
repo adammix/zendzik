@@ -13,6 +13,7 @@
 
         <!-- Le styles -->
         <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+						->prependStylesheet($this->basePath() . '/css/plugins/jstree/style.css')//jstree styles
 						->prependStylesheet($this->basePath() . '/css/style.css')//asz styles
 						->prependStylesheet($this->basePath() . '/css/sb-admin.css')//SB Admin CSS - Include with every page
 						->prependStylesheet($this->basePath() . '/css/plugins/timeline/timeline.css')
@@ -26,13 +27,15 @@
         <?php echo $this->headScript()
 			//default
 			//->prependFile($this->basePath() . '/js/demo/dashboard-demo.js')//Page-Level Demo Scripts - Dashboard - Use for reference
+			->prependFile($this->basePath() . '/js/jstree.min.js')
 			->prependFile($this->basePath() . '/js/sb-admin.js')//SB Admin Scripts - Include with every page
 			//->prependFile($this->basePath() . '/js/plugins/morris/morris.js')
 			//->prependFile($this->basePath() . '/js/plugins/morris/raphael-2.1.0.min.js')//Page-Level Plugin Scripts - Dashboard
 			->prependFile($this->basePath() . '/js/plugins/metisMenu/jquery.metisMenu.js')
 			->prependFile($this->basePath() . '/js/bootstrap.min.js')//Core Scripts - Include with every page
-			->prependFile($this->basePath() . '/js/jquery-1.10.2.js')
-        ; ?>
+			->prependFile($this->basePath() . '/js/jquery-1.10.2.js');
+			
+         ?>
 
     </head>
     <body>
@@ -275,20 +278,13 @@
                             </div>
                             <!-- /input-group -->
                         </li>
-                        <li>
-                            <a href="/user"><i class="fa fa-users fa-fw"></i> Użytkownicy</a>
-                        </li>
-                        <li>
-                            <a href="/attribute"><i class="fa fa-list-ul fa-fw"></i> Atrybyty</a>
-                        </li>
-                        <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                        <li><a href="/user"><i class="fa fa-users fa-fw"></i> Użytkownicy</a></li>
+                        <li><a href="/attribute"><i class="fa fa-list-ul fa-fw"></i> Atrybyty</a></li>
+                        <li><a href="/application/categories/index"><i class="fa fa-sitemap fa-fw"></i> Kategorie</a></li>
+                        <li><a href="/product-type"><i class="fa fa-table fa-fw"></i> Typy Produktów</a></li>
+                        <li><a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a></li>
+                        <li><a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                            
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="panels-wells.html">Panels and Wells</a>
@@ -308,48 +304,8 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="blank.html">Blank Page</a>
-                                </li>
-                                <li>
-                                    <a href="login.html">Login Page</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
+                        
+                        
                     </ul>
                     <!-- /#side-menu -->
                 </div>

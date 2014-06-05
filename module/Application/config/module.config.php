@@ -78,6 +78,20 @@ return array(
 			        ),
 			    ),
 			),
+			'products-type' => array(
+				'type' => 'segment',
+				'options' => array(
+					'route' => '/product-type[/][:action][/:id]',
+					'constraints' => array(
+						'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+						'id' => '[0-9]+',
+					),
+					'defaults' => array(
+			            'controller' => 'Application\Controller\ProductType',
+			            'action'     => 'index',
+			        ),
+				),
+			),
         ),
     ),
     'service_manager' => array(
@@ -102,7 +116,10 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'Application\Controller\Index' => 'Application\Controller\IndexController',
-            'Application\Controller\Attribute' => 'Application\Controller\AttributeController'
+            'Application\Controller\Attribute' => 'Application\Controller\AttributeController',
+            'Application\Controller\Categories' => 'Application\Controller\CategoriesController',
+            'Application\Controller\ProductType' => 'Application\Controller\ProductTypeController',
+            
         ),
     ),
     'view_manager' => array(

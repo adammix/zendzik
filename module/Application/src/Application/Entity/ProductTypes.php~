@@ -15,11 +15,11 @@ class ProductTypes
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_product_types", type="integer", nullable=false)
+     * @ORM\Column(name="id", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idProductTypes;
+    private $id;
 
     /**
      * @var string

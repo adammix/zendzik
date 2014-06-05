@@ -26,7 +26,7 @@ class Products
      *
      * @ORM\ManyToOne(targetEntity="Application\Entity\ProductTypes")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_product_types", referencedColumnName="id_product_types")
+     *   @ORM\JoinColumn(name="id_product_types", referencedColumnName="id")
      * })
      */
     private $idProductTypes;

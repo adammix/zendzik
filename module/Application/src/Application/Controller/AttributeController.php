@@ -96,8 +96,6 @@ class AttributeController extends AbstractActionController
 				//die(var_dump($_POST));
 				foreach ($unserilized as $key => $value) {
 					
-					
-					
 					$attribute_option = $this->getObjectManager()->find('\Application\Entity\AttributesOption', $key);
 					
 					if(!$attribute_option){
