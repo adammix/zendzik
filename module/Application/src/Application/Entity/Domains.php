@@ -6,35 +6,28 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Domains
- *
- * @ORM\Table(name="domains")
- * @ORM\Entity
  */
 class Domains
 {
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="name", type="string", length=45, nullable=false)
      */
     private $name;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="url", type="string", length=45, nullable=false)
      */
     private $url;
 
+    /**
+     * @var boolean
+     */
+    private $isActive;
 
 
     /**
@@ -91,5 +84,28 @@ class Domains
     public function getUrl()
     {
         return $this->url;
+    }
+
+    /**
+     * Set isActive
+     *
+     * @param boolean $isActive
+     * @return Domains
+     */
+    public function setIsActive($isActive)
+    {
+        $this->isActive = $isActive;
+
+        return $this;
+    }
+
+    /**
+     * Get isActive
+     *
+     * @return boolean 
+     */
+    public function getIsActive()
+    {
+        return $this->isActive;
     }
 }

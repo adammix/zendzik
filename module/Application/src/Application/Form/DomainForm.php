@@ -9,16 +9,22 @@ class DomainForm extends Form
 {
 	public function __construct($name = null) 
     { 
-        parent::__construct(''); 
+        parent::__construct('AddDomain'); 
         
         $this->setAttribute('method', 'post'); 
         
+		$this->add(array(
+            'name' => 'id',
+            'type' => 'Hidden',
+        ));
+		
         $this->add(array( 
             'name' => 'name', 
             'type' => 'Zend\Form\Element\Text', 
             'attributes' => array( 
                 'placeholder' => 'wpisz nazwę domeny...', 
                 'required' => 'required', 
+                'class'	=> 'form-control'
             ), 
             'options' => array( 
                 'label' => 'Nazwa domeny', 
@@ -31,6 +37,7 @@ class DomainForm extends Form
             'attributes' => array( 
                 'placeholder' => 'http://www.najlepsza-focia.com', 
                 'required' => 'required', 
+                'class'	=> 'form-control'
             ), 
             'options' => array( 
                 'label' => 'Adres url domeny', 
@@ -49,6 +56,23 @@ class DomainForm extends Form
                     '0' => 'Aktywna', 
                 ),
             ), 
-        ));       
+        )); 
+		
+		$this->add(array(
+			'name' => 'submit',
+			'attributes' => array(
+				'type' => 'button',
+				'class' => 'btn btn-outline btn-primary btn-lg',
+			),
+			'options' => array(
+				'label' => 'BUTTON',
+			),
+		));      
     } 
+	public function populateForm($domain){
+		$this->get('id')->setValue($domain->getId());
+		$this->get('name')->setValue($domain->getLogin());
+		$this->get('url')->setValue($domain->getFirstname());
+		$this->get('is_active')->setValue($domain->getLastname());
+	}
 }

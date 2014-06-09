@@ -1,0 +1,39 @@
+Application\Entity\DomainsProducts:
+    type: entity
+    table: domains_products
+    indexes:
+        IDX_2E6B2E2A52E616ED:
+            columns:
+                - id_domains
+        IDX_2E6B2E2AE361B6CF:
+            columns:
+                - id_products
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    manyToOne:
+        idDomains:
+            targetEntity: Application\Entity\Domains
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_domains:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idProducts:
+            targetEntity: Application\Entity\Products
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_products:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

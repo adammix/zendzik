@@ -11,6 +11,12 @@
  * file.
  */
 
+use Zend\Log\Writer\FirePhp,
+    Zend\Log\Writer\FirePhp\FirePhpBridge,
+    Zend\Log\Writer\Stream,
+    Zend\Log\Logger;
+ 
+ 
 return array(
     'db' => array(
          'driver'         => 'Pdo',
@@ -23,6 +29,12 @@ return array(
          'factories' => array(
              'Zend\Db\Adapter\Adapter'
                      => 'Zend\Db\Adapter\AdapterServiceFactory',
+             'log' => function () {
+                $log = new Zend\Log\Logger();
+				$log->addWriter(new Zend\Log\Writer\Stream(getcwd(). '/data/log/application.log'));
+				$log->addWriter(new Zend\Log\Writer\FirePhp());
+				return $log;
+            },
          ),
      ),
 );

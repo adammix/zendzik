@@ -34,7 +34,13 @@ class Domains
      * @ORM\Column(name="url", type="string", length=45, nullable=false)
      */
     private $url;
-
+	
+	/**
+     * @var boolean
+     *
+     * @ORM\Column(name="is_active", type="boolean", nullable=true)
+     */
+    private $is_active;
 
 
     /**

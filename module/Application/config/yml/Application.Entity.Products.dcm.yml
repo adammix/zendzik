@@ -1,0 +1,27 @@
+Application\Entity\Products:
+    type: entity
+    table: products
+    indexes:
+        IDX_B3BA5A5A46442309:
+            columns:
+                - id_product_types
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    manyToOne:
+        idProductTypes:
+            targetEntity: Application\Entity\ProductTypes
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_product_types:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

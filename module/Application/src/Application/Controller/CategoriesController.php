@@ -15,6 +15,8 @@ class CategoriesController extends AbstractActionController
 
     public function addAction()
     {
+    	
+    	//$this->getServiceLocator()->get('log')->info('xxxxxxx');
         return new ViewModel();
     }
 

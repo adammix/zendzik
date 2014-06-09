@@ -1,0 +1,40 @@
+Application\Entity\Categories:
+    type: entity
+    table: categories
+    indexes:
+        IDX_3AF3466816A2507F:
+            columns:
+                - idProductTypes
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+        parentid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: parentId
+    manyToOne:
+        idproducttypes:
+            targetEntity: Application\Entity\ProductTypes
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                idProductTypes:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

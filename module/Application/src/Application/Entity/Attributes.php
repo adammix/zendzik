@@ -6,45 +6,29 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Attributes
- *
- * @ORM\Table(name="attributes")
- * @ORM\Entity
  */
 class Attributes
 {
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="name", type="string", length=45, nullable=true)
      */
     private $name;
 
-	/**
+    /**
      * @var string
-     *
-     * @ORM\Column(name="description", type="string", length=255, nullable=true)
      */
-    private $desc;
+    private $description;
 
     /**
      * @var boolean
-     *
-     * @ORM\Column(name="type", type="boolean", nullable=true)
      */
     private $type;
 
-
-
-   
 
     /**
      * Get id
@@ -80,26 +64,26 @@ class Attributes
     }
 
     /**
-     * Set desc
+     * Set description
      *
-     * @param string $desc
+     * @param string $description
      * @return Attributes
      */
-    public function setDesc($desc)
+    public function setDescription($description)
     {
-        $this->desc = $desc;
+        $this->description = $description;
 
         return $this;
     }
 
     /**
-     * Get desc
+     * Get description
      *
      * @return string 
      */
-    public function getDesc()
+    public function getDescription()
     {
-        return $this->desc;
+        return $this->description;
     }
 
     /**
@@ -122,6 +106,6 @@ class Attributes
      */
     public function getType()
     {
-        return (int)$this->type;
+        return $this->type;
     }
 }

@@ -1,0 +1,31 @@
+Application\Entity\Domains:
+    type: entity
+    table: domains
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 45
+            fixed: false
+            comment: ''
+        url:
+            type: string
+            nullable: false
+            length: 45
+            fixed: false
+            comment: ''
+        isActive:
+            type: boolean
+            nullable: true
+            comment: ''
+            column: is_active
+    lifecycleCallbacks: {  }

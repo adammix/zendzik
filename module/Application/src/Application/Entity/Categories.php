@@ -6,49 +6,29 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Categories
- *
- * @ORM\Table(name="categories")
- * @ORM\Entity
  */
 class Categories
 {
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="name", type="string", length=100, nullable=false)
      */
     private $name;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="parentId", type="integer", nullable=false)
+     * @var integer
      */
-    private $parentId;
-	
-	/**
+    private $parentid;
+
+    /**
      * @var \Application\Entity\ProductTypes
-     *
-     * @ORM\ManyToOne(targetEntity="Application\Entity\ProductTypes")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="idProductTypes", referencedColumnName="id")
-     * })
      */
-    private $idProductTypes;
-	
+    private $idproducttypes;
 
-
-
-    
 
     /**
      * Get id
@@ -84,48 +64,48 @@ class Categories
     }
 
     /**
-     * Set parentId
+     * Set parentid
      *
-     * @param integer $parentId
+     * @param integer $parentid
      * @return Categories
      */
-    public function setParentId($parentId)
+    public function setParentid($parentid)
     {
-        $this->parentId = $parentId;
+        $this->parentid = $parentid;
 
         return $this;
     }
 
     /**
-     * Get parentId
+     * Get parentid
      *
      * @return integer 
      */
-    public function getParentId()
+    public function getParentid()
     {
-        return $this->parentId;
+        return $this->parentid;
     }
 
     /**
-     * Set idProductTypes
+     * Set idproducttypes
      *
-     * @param \Application\Entity\ProductTypes $idProductTypes
+     * @param \Application\Entity\ProductTypes $idproducttypes
      * @return Categories
      */
-    public function setIdProductTypes(\Application\Entity\ProductTypes $idProductTypes = null)
+    public function setIdproducttypes(\Application\Entity\ProductTypes $idproducttypes = null)
     {
-        $this->idProductTypes = $idProductTypes;
+        $this->idproducttypes = $idproducttypes;
 
         return $this;
     }
 
     /**
-     * Get idProductTypes
+     * Get idproducttypes
      *
      * @return \Application\Entity\ProductTypes 
      */
-    public function getIdProductTypes()
+    public function getIdproducttypes()
     {
-        return $this->idProductTypes;
+        return $this->idproducttypes;
     }
 }

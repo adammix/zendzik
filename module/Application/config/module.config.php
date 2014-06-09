@@ -119,6 +119,8 @@ return array(
             'Application\Controller\Attribute' => 'Application\Controller\AttributeController',
             'Application\Controller\Categories' => 'Application\Controller\CategoriesController',
             'Application\Controller\ProductType' => 'Application\Controller\ProductTypeController',
+            'Application\Controller\Domains' => 'Application\Controller\DomainsController',
+            'Application\Controller\DomainsSet' => 'Application\Controller\DomainsSetController',
             
         ),
     ),
@@ -147,7 +149,7 @@ return array(
     ),
     'doctrine' => array(
         'driver' => array(
-            'application_entities' => array(
+            /*'application_entities' => array(
                 'class' =>'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
                 'cache' => 'array',
                 'paths' => array(__DIR__ . '/../src/Application/Entity')
@@ -156,6 +158,17 @@ return array(
             'orm_default' => array(
                 'drivers' => array(
                     'Application\Entity' => 'application_entities'
+                )
+            )*/
+            'ApplicationYamlDriver' => array(
+                'class' => 'Doctrine\ORM\Mapping\Driver\YamlDriver',
+                'cache' => 'array',
+                'extension' => '.dcm.yml',
+                'paths' => array(__DIR__ . '/yml')
+            ),
+            'orm_default' => array(
+                'drivers' => array(
+                    'Application\Entity' => 'ApplicationYamlDriver',
                 )
             )
         ),

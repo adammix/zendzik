@@ -6,48 +6,28 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Views
- *
- * @ORM\Table(name="views", indexes={@ORM\Index(name="fk_views_products1_idx", columns={"id_products"}), @ORM\Index(name="fk_views_domains1_idx", columns={"domains_id"})})
- * @ORM\Entity
  */
 class Views
 {
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id_views", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $idViews;
 
     /**
      * @var boolean
-     *
-     * @ORM\Column(name="is_default", type="boolean", nullable=true)
      */
     private $isDefault;
 
     /**
      * @var \Application\Entity\Domains
-     *
-     * @ORM\ManyToOne(targetEntity="Application\Entity\Domains")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="domains_id", referencedColumnName="id")
-     * })
      */
     private $domains;
 
     /**
      * @var \Application\Entity\Products
-     *
-     * @ORM\ManyToOne(targetEntity="Application\Entity\Products")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_products", referencedColumnName="id")
-     * })
      */
     private $idProducts;
-
 
 
     /**

@@ -26,7 +26,7 @@ class AttributeController extends AbstractActionController
 			$attribute = new Attributes();
 			$is_option = $this->getRequest()->getPost('attribute_type');//zmienna okreslajaca typ atrybutu (zwykly/select)
 		 	$attribute 	->setName($this->getRequest()->getPost('attribute_name'))
-						->setDesc($this->getRequest()->getPost('attribute_desc'))
+						->setDescription($this->getRequest()->getPost('attribute_desc'))
 						->setType($this->getRequest()->getPost('attribute_type'));
 			$this->getObjectManager()->persist($attribute);			
 			$this->getObjectManager()->flush();
@@ -72,7 +72,7 @@ class AttributeController extends AbstractActionController
 		$data = array(
 		    'id'    => $attribute->getId(),
 		    'attribute_name' => $attribute->getName(),
-		    'attribute_desc' => $attribute->getDesc(),
+		    'attribute_desc' => $attribute->getDescription(),
 		    'attribute_type' => $attribute->getType(),
 		    'attribute_options' => json_encode($data_options),
 		);

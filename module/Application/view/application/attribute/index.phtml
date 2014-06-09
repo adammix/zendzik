@@ -18,7 +18,7 @@
                     <tr>
                         <td><?php echo $attribute->getId(); ?></td>
                         <td><?php echo $attribute->getName(); ?></td>
-                        <td><?php  echo $attribute->getDesc();  ?></td>
+                        <td><?php  echo $attribute->getDescription();  ?></td>
                         <td><?php echo $attribute->getType(); ?></td>
                         <td>
                             <a href="<?php echo $this->url('attribute', array('action'=>'edit', 'id' => $attribute->getId()));?>"><i class="btn btn-warning btn-circle fa fa-pencil fa-fw"></i></a>

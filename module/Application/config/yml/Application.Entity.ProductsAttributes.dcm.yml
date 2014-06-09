@@ -1,0 +1,59 @@
+Application\Entity\ProductsAttributes:
+    type: entity
+    table: products_attributes
+    indexes:
+        IDX_E3C4666EBAAF4009:
+            columns:
+                - attributes_id
+        IDX_E3C4666E6C8A81A9:
+            columns:
+                - products_id
+        IDX_E3C4666E75ABF08:
+            columns:
+                - views_id_views
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        attributeValue:
+            type: string
+            nullable: true
+            length: 45
+            fixed: false
+            comment: ''
+            column: attribute_value
+    manyToOne:
+        products:
+            targetEntity: Application\Entity\Products
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                products_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        viewsViews:
+            targetEntity: Application\Entity\Views
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                views_id_views:
+                    referencedColumnName: id_views
+            orphanRemoval: false
+        attributes:
+            targetEntity: Application\Entity\Attributes
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                attributes_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

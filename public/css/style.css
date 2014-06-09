@@ -44,6 +44,7 @@ div.container a.brand {
  * 
  * */
 
+#AddDomain label,
 #AddUser label,
 #AddAttribute label{
 	display: block;

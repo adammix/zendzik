@@ -1,0 +1,39 @@
+Application\Entity\AttributesGroups:
+    type: entity
+    table: attributes_groups
+    indexes:
+        IDX_2C1BF02E94111EA7:
+            columns:
+                - id_attributes
+        IDX_2C1BF02E46442309:
+            columns:
+                - id_product_types
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    manyToOne:
+        idProductTypes:
+            targetEntity: Application\Entity\ProductTypes
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_product_types:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idAttributes:
+            targetEntity: Application\Entity\Attributes
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_attributes:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

@@ -18,3 +18,19 @@ vendor\bin\doctrine-module orm:validate-schema
 
 
 php zf.php orm:generate-entities --generate-annotations="true" module/Application/src
+
+
+
+
+firephp - instrukcja z książki zf2cookbook ważne włączenie w firebugu zakładki sieć 
+
+$this->getServiceLocator()->get('log')->info($tablica);
+
+
+YML doctrine
+
+//komenda służąca do generowania klas annotation z yml wszsytko dzieki konfiguracji lokalizacji plikow yml w modules.config.php i konfiguracji Doctrina na yml
+
+php zf.php orm:generate-entities module/Application/src/  
+
+vendor\bin\doctrine-module orm:convert-mapping --namespace="Application\Entity\\" --force  --from-database yml module\Application\src\

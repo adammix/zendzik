@@ -1,0 +1,34 @@
+Application\Entity\AttributesOption:
+    type: entity
+    table: attributes_option
+    indexes:
+        IDX_86F0C9EE94111EA7:
+            columns:
+                - id_attributes
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        value:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            comment: ''
+    manyToOne:
+        idAttributes:
+            targetEntity: Application\Entity\Attributes
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_attributes:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

@@ -6,49 +6,33 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * User
- *
- * @ORM\Table(name="user")
- * @ORM\Entity
  */
 class User
 {
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
- 	/**
-     * @var string
-     *
-     * @ORM\Column(name="login", type="string", length=255, nullable=false)
-     */
-    private $login;
-	
     /**
      * @var string
-     *
-     * @ORM\Column(name="firstName", type="string", length=255, nullable=false)
+     */
+    private $login;
+
+    /**
+     * @var string
      */
     private $firstname;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="lastName", type="string", length=255, nullable=false)
      */
     private $lastname;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="password", type="string", length=255, nullable=false)
      */
     private $password;
-
 
 
     /**
@@ -59,6 +43,29 @@ class User
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set login
+     *
+     * @param string $login
+     * @return User
+     */
+    public function setLogin($login)
+    {
+        $this->login = $login;
+
+        return $this;
+    }
+
+    /**
+     * Get login
+     *
+     * @return string 
+     */
+    public function getLogin()
+    {
+        return $this->login;
     }
 
     /**
@@ -115,19 +122,11 @@ class User
      */
     public function setPassword($password)
     {
-       //$this->password = crypt($plaintextPassword, '$5$rounds=5000$'.$salt.'$');
-		
-		$this->password = $password;
+        $this->password = $password;
 
         return $this;
     }
-	
-	/*
-	public static function hashPassword($player, $password)
-    {
-        return ($player->getPassword() === crypt($password, $player->getPassword()));
-    }
-	*/
+
     /**
      * Get password
      *
@@ -136,28 +135,5 @@ class User
     public function getPassword()
     {
         return $this->password;
-    }
-
-    /**
-     * Set login
-     *
-     * @param string $login
-     * @return User
-     */
-    public function setLogin($login)
-    {
-        $this->login = $login;
-
-        return $this;
-    }
-
-    /**
-     * Get login
-     *
-     * @return string 
-     */
-    public function getLogin()
-    {
-        return $this->login;
     }
 }
