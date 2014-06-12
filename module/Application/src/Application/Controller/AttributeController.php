@@ -82,7 +82,7 @@ class AttributeController extends AbstractActionController
 			
 			$is_option = $this->getRequest()->getPost('attribute_type');
 		 	$attribute  ->setName($this->getRequest()->getPost('attribute_name'))
-						->setDesc($this->getRequest()->getPost('attribute_desc'))
+						->setDescription($this->getRequest()->getPost('attribute_desc'))
 						->setType($this->getRequest()->getPost('attribute_type'));
 			$this->getObjectManager()->persist($attribute);			
 			$this->getObjectManager()->flush();
@@ -138,7 +138,7 @@ class AttributeController extends AbstractActionController
 		if ($attribute) {
             $this->getObjectManager()->remove($attribute);
 			$attribute_temp = $this->getObjectManager()->getRepository('\Application\Entity\AttributesOption')->findBy(array('idAttributes' => $id));
-			foreach ($attribute_temp AS $attribute_options) {
+			foreach ($attribute_temp as $attribute_options) {
 			    $this->getObjectManager()->remove($attribute_options);
 			}
             $this->getObjectManager()->flush();

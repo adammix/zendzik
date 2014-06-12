@@ -75,11 +75,37 @@ div.container a.brand {
 	height: 30px;
 	padding: 5px 10px 0 10px;
 }
-
-
-
-
-
+.domain_checkbox input{
+	float: left;
+	margin-right: 15px;
+}
+.url_active span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: #57A900;
+	border-radius: 10px;
+	margin-left: 20px;
+}
+.url_none span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: #ff1b1b;
+	border-radius: 10px;
+	margin-left: 20px;
+}
+/* = = = = FORMULARZ TYU PRODUKTU = = = = */
+#AddProductType{
+	
+}
+#AddProductType label{
+	display: block;
+	width: 50%;
+}
+#AddProductType input[type="submit"]{
+	display: block;	
+}
 
 
 
@@ -97,11 +123,12 @@ div.container a.brand {
 	border: 1px solid #c2c2c2;
 	border-radius: 10px;
 	display: inline-block;
+	margin: 20px 0;
 }
 .tree_buttons{
-	padding-top: 20px;
-	margin-top: 20px;
-	border-top: 1px solid #428BCA;
+	padding: 0 0 20px;
+	margin: 0 0 20px;
+	border-bottom: 1px solid #428BCA;
 }
 
 

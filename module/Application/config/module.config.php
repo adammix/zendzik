@@ -92,6 +92,34 @@ return array(
 			        ),
 				),
 			),
+			'domains' => array(
+				'type' => 'segment',
+				'options' => array(
+					'route' => '/domains[/][:action][/:id]',
+					'constraints' => array(
+						'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+						'id' => '[0-9]+',
+					),
+					'defaults' => array(
+			            'controller' => 'Application\Controller\Domains',
+			            'action'     => 'index',
+			        ),
+				),
+			),
+			'categories' => array(
+				'type' => 'segment',
+				'options' => array(
+					'route' => '/categories[/][:action][/:id]',
+					'constraints' => array(
+						'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+						'id' => '[0-9]+',
+					),
+					'defaults' => array(
+			            'controller' => 'Application\Controller\Categories',
+			            'action'     => 'index',
+			        ),
+				),
+			),
         ),
     ),
     'service_manager' => array(
@@ -120,7 +148,7 @@ return array(
             'Application\Controller\Categories' => 'Application\Controller\CategoriesController',
             'Application\Controller\ProductType' => 'Application\Controller\ProductTypeController',
             'Application\Controller\Domains' => 'Application\Controller\DomainsController',
-            'Application\Controller\DomainsSet' => 'Application\Controller\DomainsSetController',
+            
             
         ),
     ),

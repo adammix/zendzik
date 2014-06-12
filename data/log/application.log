@@ -1,0 +1,99 @@
+
+2014-06-10T09:15:31+02:00 INFO (6): xxxx
+2014-06-10T09:15:33+02:00 INFO (6): xxxx
+2014-06-10T10:35:36+02:00 INFO (6): array (
+  0 => '1',
+)
+2014-06-10T10:36:57+02:00 INFO (6): array (
+  0 => '1',
+)
+2014-06-10T10:40:50+02:00 INFO (6): array (
+  0 => '1',
+)
+2014-06-10T10:41:28+02:00 INFO (6): array (
+  0 => '1',
+)
+2014-06-10T10:41:56+02:00 INFO (6): array (
+  0 => '1',
+)
+2014-06-10T10:47:03+02:00 INFO (6): 1
+2014-06-10T10:47:13+02:00 INFO (6): 0
+2014-06-12T08:09:42+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Attributes::__set_state(array(
+     'id' => 2,
+     'name' => 'ssssssssssss',
+     'description' => 'sssssssssssssssss',
+     'type' => true,
+  )),
+  1 => 
+  Application\Entity\Attributes::__set_state(array(
+     'id' => 3,
+     'name' => 'NAZWA SZABLONU',
+     'description' => 'TO BEDZIE NAZWA SZABLONU WYSWIETLANA GDZIES TAM ',
+     'type' => true,
+  )),
+)
+2014-06-12T09:30:52+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Attributes::__set_state(array(
+     'id' => 2,
+     'name' => 'nazwa',
+     'description' => 'Nazwa produktu',
+     'type' => false,
+  )),
+  1 => 
+  Application\Entity\Attributes::__set_state(array(
+     'id' => 3,
+     'name' => 'cena',
+     'description' => 'Cena szablonu',
+     'type' => false,
+  )),
+  2 => 
+  Application\Entity\Attributes::__set_state(array(
+     'id' => 4,
+     'name' => 'hash',
+     'description' => 'identyfikator produktu',
+     'type' => false,
+  )),
+  3 => 
+  Application\Entity\Attributes::__set_state(array(
+     'id' => 5,
+     'name' => 'kolor',
+     'description' => 'kolor szablonu',
+     'type' => true,
+  )),
+  4 => 
+  Application\Entity\Attributes::__set_state(array(
+     'id' => 6,
+     'name' => 'styl',
+     'description' => 'style szablonu',
+     'type' => true,
+  )),
+)
+2014-06-12T09:30:52+02:00 INFO (6):
+2014-06-12T09:38:47+02:00 INFO (6): nazwa
+2014-06-12T09:38:47+02:00 INFO (6): cena
+2014-06-12T09:38:47+02:00 INFO (6): hash
+2014-06-12T09:38:47+02:00 INFO (6): kolor
+2014-06-12T09:38:47+02:00 INFO (6): styl
+2014-06-12T10:00:26+02:00 INFO (6): nazwa
+2014-06-12T10:00:26+02:00 INFO (6): cena
+2014-06-12T10:00:26+02:00 INFO (6): hash
+2014-06-12T10:00:26+02:00 INFO (6): kolor
+2014-06-12T10:00:26+02:00 INFO (6): styl
+2014-06-12T10:04:47+02:00 INFO (6): nazwa
+2014-06-12T10:04:47+02:00 INFO (6): cena
+2014-06-12T10:04:47+02:00 INFO (6): hash
+2014-06-12T10:04:47+02:00 INFO (6): kolor
+2014-06-12T10:04:47+02:00 INFO (6): styl
+2014-06-12T10:12:41+02:00 INFO (6): nazwa (Nazwa produktu)
+2014-06-12T10:12:41+02:00 INFO (6): cena (Cena szablonu)
+2014-06-12T10:12:41+02:00 INFO (6): hash (identyfikator produktu)
+2014-06-12T10:12:41+02:00 INFO (6): kolor (kolor szablonu)
+2014-06-12T10:12:41+02:00 INFO (6): styl (style szablonu)
+2014-06-12T10:34:47+02:00 INFO (6): nazwa (Nazwa produktu)
+2014-06-12T10:34:47+02:00 INFO (6): cena (Cena szablonu)
+2014-06-12T10:34:47+02:00 INFO (6): hash (identyfikator produktu)
+2014-06-12T10:34:47+02:00 INFO (6): kolor (kolor szablonu)
+2014-06-12T10:34:47+02:00 INFO (6): styl (style szablonu)

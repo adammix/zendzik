@@ -1,37 +1,1 @@
-<?php
-
-namespace Application\Controller;
-
-use Zend\Mvc\Controller\AbstractActionController;
-use Zend\View\Model\ViewModel;
-use Application\Entity\ProductTypes;
-//use Application\Entity\AttributesOption;
-use Application\Form\ProductTypeForm;
-
-class ProductTypeController extends AbstractActionController
-{
-
-    public function indexAction()
-    {
-        return new ViewModel();
-    }
-
-    public function addAction()
-    {
-    	 $form = new ProductTypeForm();
-         return new ViewModel(array('form' => $form));
-    }
-
-    public function editAction()
-    {
-        return new ViewModel();
-    }
-
-    public function deleteAction()
-    {
-        return new ViewModel();
-    }
-
-
-}
-
+<?phpnamespace Application\Controller;use Zend\Mvc\Controller\AbstractActionController;use Zend\View\Model\ViewModel;use Application\Entity\ProductTypes;use Application\Entity\Domains;use Application\Entity\Categories;use Application\Entity\Attributes;	use Application\Entity\AttributesGroups;	use Application\Form\ProductTypeForm;class ProductTypeController extends AbstractActionController{	protected $_objectManager = null;	    public function indexAction()    {        return new ViewModel();    }    public function addAction()    {    	$form = new ProductTypeForm();				/**		 * ATRYBUTY		 */		$attributes = $this->getObjectManager()->getRepository('\Application\Entity\Attributes')->findAll();		$attr_options = array();		foreach ($attributes as $key => $value) {			$attr_id = '';			$attr_name = '';			$attr_id = $attributes[$key]->getId();			$attr_name = $attributes[$key]->getName();			$attr_desc = $attributes[$key]->getDescription();			$attr_name = $attr_name.' ('.$attr_desc.')';			$attr_options[$attr_id] = $attr_name;			//$this->getServiceLocator()->get('log')->info($attr_name);		}		$form->get('attributes')->setAttribute('options', $attr_options);				/**		 * DOMENY		 */		$domains = $this->getObjectManager()->getRepository('\Application\Entity\Domains')->findAll();		$domain_options = array();		foreach ($domains as $key => $value) {			$domain_id = '';			$domain_name = '';			$domain_id = $domains[$key]->getId();			$domain_name = $domains[$key]->getName();						$domain_options[$domain_id] = $domain_name;			//$this->getServiceLocator()->get('log')->info($attr_name);		}		$form->get('domains')->setAttribute('options', $domain_options);				//$form->get('ELEMENT_NAME')->setAttribute('options' ,array('KEY' => 'VALUE'));		        return new ViewModel(array('form' => $form));    }    public function editAction()    {        return new ViewModel();    }    public function deleteAction()    {        return new ViewModel();    }		protected function getObjectManager()    {        if (!$this->_objectManager) {            $this->_objectManager = $this->getServiceLocator()->get('Doctrine\ORM\EntityManager');        }        return $this->_objectManager;    }}

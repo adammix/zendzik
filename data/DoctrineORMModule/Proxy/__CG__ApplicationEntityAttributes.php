@@ -64,10 +64,10 @@ class Attributes extends \Application\Entity\Attributes implements \Doctrine\ORM
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', 'id', 'name', 'desc', 'type');
+            return array('__isInitialized__', '' . "\0" . 'Application\\Entity\\Attributes' . "\0" . 'id', '' . "\0" . 'Application\\Entity\\Attributes' . "\0" . 'name', '' . "\0" . 'Application\\Entity\\Attributes' . "\0" . 'description', '' . "\0" . 'Application\\Entity\\Attributes' . "\0" . 'type');
         }
 
-        return array('__isInitialized__', 'id', 'name', 'desc', 'type');
+        return array('__isInitialized__', '' . "\0" . 'Application\\Entity\\Attributes' . "\0" . 'id', '' . "\0" . 'Application\\Entity\\Attributes' . "\0" . 'name', '' . "\0" . 'Application\\Entity\\Attributes' . "\0" . 'description', '' . "\0" . 'Application\\Entity\\Attributes' . "\0" . 'type');
     }
 
     /**
@@ -213,23 +213,23 @@ class Attributes extends \Application\Entity\Attributes implements \Doctrine\ORM
     /**
      * {@inheritDoc}
      */
-    public function setDesc($desc)
+    public function setDescription($description)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setDesc', array($desc));
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setDescription', array($description));
 
-        return parent::setDesc($desc);
+        return parent::setDescription($description);
     }
 
     /**
      * {@inheritDoc}
      */
-    public function getDesc()
+    public function getDescription()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDesc', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDescription', array());
 
-        return parent::getDesc();
+        return parent::getDescription();
     }
 
     /**

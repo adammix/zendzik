@@ -24,9 +24,42 @@ class ProductTypeForm extends Form
                 'class'	=> 'form-control'
             ), 
             'options' => array( 
-                'label' => 'Nazwa atrybutu', 
+                'label' => 'Nazwa typu produktu', 
             ), 
         )); 
+		
+		$this->add(array(
+			'name' => 'domains',
+            'type' => 'Zend\Form\Element\Select',
+            'attributes' => array(
+                'multiple' => 'multiple',
+                'class' => 'form-control'
+            ),
+            'options' => array(
+                'label' => 'Domeny',
+                'value_options' => array(
+                ),
+            ),
+        ));
+		
+		$this->add(array(
+			'name' => 'attributes',
+            'type' => 'Zend\Form\Element\Select',
+            'attributes' => array(
+                'multiple' => 'multiple',
+                'class' => 'form-control'
+            ),
+            'options' => array(
+                'label' => 'Atrybuty',
+                'value_options' => array(
+                ),
+            ),
+        ));
+		
+		$this->add(array(
+            'name' => 'categories',
+            'type' => 'Hidden',
+        ));
 		
 		$this->add(array(
 			'name' => 'submit',

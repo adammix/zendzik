@@ -46,15 +46,16 @@ class DomainForm extends Form
  
         $this->add(array( 
             'name' => 'is_active', 
-            'type' => 'Zend\Form\Element\MultiCheckbox', 
+            'type' => 'Zend\Form\Element\Checkbox', 
             'attributes' => array( 
-                'required' => 'required', 
-                'value' => '0', 
+                'class'	=> 'checkbox-inline'
             ), 
             'options' => array( 
-                'value_options' => array(
-                    '0' => 'Aktywna', 
-                ),
+                'label' => 'Aktywna',
+                'checked_value' => '1',
+                 'label_attributes' => array(
+		            'class'  => 'domain_checkbox'
+		        ),
             ), 
         )); 
 		
