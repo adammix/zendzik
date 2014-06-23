@@ -6,33 +6,58 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * ProductsAttributes
+ *
+ * @ORM\Table(name="products_attributes", indexes={@ORM\Index(name="IDX_E3C4666EBAAF4009", columns={"attributes_id"}), @ORM\Index(name="IDX_E3C4666E6C8A81A9", columns={"products_id"}), @ORM\Index(name="IDX_E3C4666E75ABF08", columns={"views_id_views"})})
+ * @ORM\Entity
  */
 class ProductsAttributes
 {
     /**
      * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="attribute_value", type="string", length=45, nullable=true)
      */
     private $attributeValue;
 
     /**
      * @var \Application\Entity\Products
+     *
+     * @ORM\ManyToOne(targetEntity="Application\Entity\Products")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="products_id", referencedColumnName="id")
+     * })
      */
     private $products;
 
     /**
      * @var \Application\Entity\Views
+     *
+     * @ORM\ManyToOne(targetEntity="Application\Entity\Views")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="views_id_views", referencedColumnName="id_views")
+     * })
      */
     private $viewsViews;
 
     /**
      * @var \Application\Entity\Attributes
+     *
+     * @ORM\ManyToOne(targetEntity="Application\Entity\Attributes")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="attributes_id", referencedColumnName="id")
+     * })
      */
     private $attributes;
+
 
 
     /**

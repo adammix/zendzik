@@ -26,6 +26,7 @@ Application\Entity\AttributesGroups:
             joinColumns:
                 id_product_types:
                     referencedColumnName: id
+                    onDelete: SET NULL
             orphanRemoval: false
         idAttributes:
             targetEntity: Application\Entity\Attributes

@@ -1,99 +1,3917 @@
-
-2014-06-10T09:15:31+02:00 INFO (6): xxxx
-2014-06-10T09:15:33+02:00 INFO (6): xxxx
-2014-06-10T10:35:36+02:00 INFO (6): array (
-  0 => '1',
-)
-2014-06-10T10:36:57+02:00 INFO (6): array (
-  0 => '1',
-)
-2014-06-10T10:40:50+02:00 INFO (6): array (
-  0 => '1',
-)
-2014-06-10T10:41:28+02:00 INFO (6): array (
-  0 => '1',
-)
-2014-06-10T10:41:56+02:00 INFO (6): array (
-  0 => '1',
-)
-2014-06-10T10:47:03+02:00 INFO (6): 1
-2014-06-10T10:47:13+02:00 INFO (6): 0
-2014-06-12T08:09:42+02:00 INFO (6): array (
+2014-06-16T09:51:41+02:00 INFO (6): 24
+2014-06-16T09:52:00+02:00 INFO (6): 25
+2014-06-16T09:55:14+02:00 INFO (6): 26
+2014-06-16T09:55:14+02:00 INFO (6): 26
+2014-06-16T09:55:14+02:00 INFO (6): 26
+2014-06-16T09:55:14+02:00 INFO (6): 26
+2014-06-18T07:55:59+02:00 INFO (6): array (
   0 => 
-  Application\Entity\Attributes::__set_state(array(
-     'id' => 2,
-     'name' => 'ssssssssssss',
-     'description' => 'sssssssssssssssss',
-     'type' => true,
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 38,
+       'name' => NULL,
+       'isCategory' => NULL,
+       'domains' => NULL,
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 2,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
   )),
   1 => 
-  Application\Entity\Attributes::__set_state(array(
-     'id' => 3,
-     'name' => 'NAZWA SZABLONU',
-     'description' => 'TO BEDZIE NAZWA SZABLONU WYSWIETLANA GDZIES TAM ',
-     'type' => true,
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 38,
+       'name' => NULL,
+       'isCategory' => NULL,
+       'domains' => NULL,
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 3,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 38,
+       'name' => NULL,
+       'isCategory' => NULL,
+       'domains' => NULL,
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 4,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 38,
+       'name' => NULL,
+       'isCategory' => NULL,
+       'domains' => NULL,
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 5,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
   )),
 )
-2014-06-12T09:30:52+02:00 INFO (6): array (
+2014-06-18T08:34:48+02:00 INFO (6): array (
   0 => 
-  Application\Entity\Attributes::__set_state(array(
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => NULL,
+     '__cloner__' => NULL,
+     '__isInitialized__' => true,
      'id' => 2,
      'name' => 'nazwa',
      'description' => 'Nazwa produktu',
      'type' => false,
   )),
   1 => 
-  Application\Entity\Attributes::__set_state(array(
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => NULL,
+     '__cloner__' => NULL,
+     '__isInitialized__' => true,
      'id' => 3,
      'name' => 'cena',
      'description' => 'Cena szablonu',
      'type' => false,
   )),
   2 => 
-  Application\Entity\Attributes::__set_state(array(
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => NULL,
+     '__cloner__' => NULL,
+     '__isInitialized__' => true,
      'id' => 4,
      'name' => 'hash',
      'description' => 'identyfikator produktu',
      'type' => false,
   )),
   3 => 
-  Application\Entity\Attributes::__set_state(array(
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => NULL,
+     '__cloner__' => NULL,
+     '__isInitialized__' => true,
      'id' => 5,
      'name' => 'kolor',
      'description' => 'kolor szablonu',
      'type' => true,
   )),
-  4 => 
-  Application\Entity\Attributes::__set_state(array(
-     'id' => 6,
-     'name' => 'styl',
-     'description' => 'style szablonu',
-     'type' => true,
+)
+2014-06-18T08:34:48+02:00 INFO (6): array (
+  0 => '22',
+  1 => '23',
+  2 => '25',
+  3 => '',
+)
+2014-06-18T08:36:43+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 2,
+       'name' => 'nazwa',
+       'description' => 'Nazwa produktu',
+       'type' => false,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 3,
+       'name' => 'cena',
+       'description' => 'Cena szablonu',
+       'type' => false,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 4,
+       'name' => 'hash',
+       'description' => 'identyfikator produktu',
+       'type' => false,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 5,
+       'name' => 'kolor',
+       'description' => 'kolor szablonu',
+       'type' => true,
+    )),
   )),
 )
-2014-06-12T09:30:52+02:00 INFO (6):
-2014-06-12T09:38:47+02:00 INFO (6): nazwa
-2014-06-12T09:38:47+02:00 INFO (6): cena
-2014-06-12T09:38:47+02:00 INFO (6): hash
-2014-06-12T09:38:47+02:00 INFO (6): kolor
-2014-06-12T09:38:47+02:00 INFO (6): styl
-2014-06-12T10:00:26+02:00 INFO (6): nazwa
-2014-06-12T10:00:26+02:00 INFO (6): cena
-2014-06-12T10:00:26+02:00 INFO (6): hash
-2014-06-12T10:00:26+02:00 INFO (6): kolor
-2014-06-12T10:00:26+02:00 INFO (6): styl
-2014-06-12T10:04:47+02:00 INFO (6): nazwa
-2014-06-12T10:04:47+02:00 INFO (6): cena
-2014-06-12T10:04:47+02:00 INFO (6): hash
-2014-06-12T10:04:47+02:00 INFO (6): kolor
-2014-06-12T10:04:47+02:00 INFO (6): styl
-2014-06-12T10:12:41+02:00 INFO (6): nazwa (Nazwa produktu)
-2014-06-12T10:12:41+02:00 INFO (6): cena (Cena szablonu)
-2014-06-12T10:12:41+02:00 INFO (6): hash (identyfikator produktu)
-2014-06-12T10:12:41+02:00 INFO (6): kolor (kolor szablonu)
-2014-06-12T10:12:41+02:00 INFO (6): styl (style szablonu)
-2014-06-12T10:34:47+02:00 INFO (6): nazwa (Nazwa produktu)
-2014-06-12T10:34:47+02:00 INFO (6): cena (Cena szablonu)
-2014-06-12T10:34:47+02:00 INFO (6): hash (identyfikator produktu)
-2014-06-12T10:34:47+02:00 INFO (6): kolor (kolor szablonu)
-2014-06-12T10:34:47+02:00 INFO (6): styl (style szablonu)
+2014-06-18T08:36:43+02:00 INFO (6): array (
+  0 => '22',
+  1 => '23',
+  2 => '25',
+  3 => '',
+)
+2014-06-18T08:53:53+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 2,
+       'name' => 'nazwa',
+       'description' => 'Nazwa produktu',
+       'type' => false,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 3,
+       'name' => 'cena',
+       'description' => 'Cena szablonu',
+       'type' => false,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 4,
+       'name' => 'hash',
+       'description' => 'identyfikator produktu',
+       'type' => false,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 5,
+       'name' => 'kolor',
+       'description' => 'kolor szablonu',
+       'type' => true,
+    )),
+  )),
+)
+2014-06-18T08:53:53+02:00 INFO (6): array (
+  0 => '22',
+  1 => '23',
+  2 => '25',
+  3 => '',
+)
+2014-06-18T08:55:30+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 2,
+       'name' => 'nazwa',
+       'description' => 'Nazwa produktu',
+       'type' => false,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 3,
+       'name' => 'cena',
+       'description' => 'Cena szablonu',
+       'type' => false,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 4,
+       'name' => 'hash',
+       'description' => 'identyfikator produktu',
+       'type' => false,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 5,
+       'name' => 'kolor',
+       'description' => 'kolor szablonu',
+       'type' => true,
+    )),
+  )),
+)
+2014-06-18T08:55:30+02:00 INFO (6): array (
+  0 => '22',
+  1 => '23',
+  2 => '25',
+  3 => '',
+)
+2014-06-18T08:55:43+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 2,
+       'name' => 'nazwa',
+       'description' => 'Nazwa produktu',
+       'type' => false,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 3,
+       'name' => 'cena',
+       'description' => 'Cena szablonu',
+       'type' => false,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 4,
+       'name' => 'hash',
+       'description' => 'identyfikator produktu',
+       'type' => false,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 5,
+       'name' => 'kolor',
+       'description' => 'kolor szablonu',
+       'type' => true,
+    )),
+  )),
+)
+2014-06-18T08:55:43+02:00 INFO (6): array (
+  0 => '22',
+  1 => '23',
+  2 => '25',
+  3 => '',
+)
+2014-06-18T09:15:35+02:00 INFO (6): colorland
+2014-06-18T09:15:35+02:00 INFO (6): nakolorowo
+2014-06-18T09:15:35+02:00 INFO (6): farboland
+2014-06-18T09:15:35+02:00 INFO (6): g00gle.pl
+2014-06-18T09:15:35+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 2,
+       'name' => 'nazwa',
+       'description' => 'Nazwa produktu',
+       'type' => false,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 3,
+       'name' => 'cena',
+       'description' => 'Cena szablonu',
+       'type' => false,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 4,
+       'name' => 'hash',
+       'description' => 'identyfikator produktu',
+       'type' => false,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 5,
+       'name' => 'kolor',
+       'description' => 'kolor szablonu',
+       'type' => true,
+    )),
+  )),
+)
+2014-06-18T09:15:35+02:00 INFO (6): array (
+  0 => '22',
+  1 => '23',
+  2 => '25',
+  3 => '',
+)
+2014-06-18T09:21:21+02:00 INFO (6): array (
+  22 => 'colorland',
+  23 => 'nakolorowo',
+  25 => 'farboland',
+  26 => 'g00gle.pl',
+)
+2014-06-18T09:21:21+02:00 INFO (6): array (
+  0 => '22',
+  1 => '23',
+  2 => '25',
+  3 => '',
+)
+2014-06-18T09:23:14+02:00 INFO (6): nazwa
+2014-06-18T09:23:14+02:00 INFO (6): cena
+2014-06-18T09:23:14+02:00 INFO (6): hash
+2014-06-18T09:23:14+02:00 INFO (6): kolor
+2014-06-18T09:23:14+02:00 INFO (6): styl
+2014-06-18T09:23:47+02:00 INFO (6): nazwa
+2014-06-18T09:23:47+02:00 INFO (6): cena
+2014-06-18T09:23:47+02:00 INFO (6): hash
+2014-06-18T09:23:47+02:00 INFO (6): kolor
+2014-06-18T09:23:47+02:00 INFO (6): styl
+2014-06-18T09:23:47+02:00 INFO (6): array (
+  2 => 'nazwa (Nazwa produktu)',
+  3 => 'cena (Cena szablonu)',
+  4 => 'hash (identyfikator produktu)',
+  5 => 'kolor (kolor szablonu)',
+  6 => 'styl (style szablonu)',
+)
+2014-06-18T09:27:11+02:00 INFO (6): array (
+)
+2014-06-18T09:27:11+02:00 INFO (6): nazwa
+2014-06-18T09:27:11+02:00 INFO (6): cena
+2014-06-18T09:27:11+02:00 INFO (6): hash
+2014-06-18T09:27:11+02:00 INFO (6): kolor
+2014-06-18T09:27:11+02:00 INFO (6): styl
+2014-06-18T09:27:11+02:00 INFO (6): array (
+  2 => 'nazwa (Nazwa produktu)',
+  3 => 'cena (Cena szablonu)',
+  4 => 'hash (identyfikator produktu)',
+  5 => 'kolor (kolor szablonu)',
+  6 => 'styl (style szablonu)',
+)
+2014-06-18T09:35:44+02:00 INFO (6): array (
+)
+2014-06-18T09:35:44+02:00 INFO (6): array (
+  2 => 'nazwa (Nazwa produktu)',
+  3 => 'cena (Cena szablonu)',
+  4 => 'hash (identyfikator produktu)',
+  5 => 'kolor (kolor szablonu)',
+  6 => 'styl (style szablonu)',
+)
+2014-06-18T09:37:49+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 2,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 3,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 4,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 5,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+)
+2014-06-18T09:37:49+02:00 INFO (6): array (
+)
+2014-06-18T09:37:49+02:00 INFO (6): array (
+  2 => 'nazwa (Nazwa produktu)',
+  3 => 'cena (Cena szablonu)',
+  4 => 'hash (identyfikator produktu)',
+  5 => 'kolor (kolor szablonu)',
+  6 => 'styl (style szablonu)',
+)
+2014-06-18T09:54:16+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 2,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 3,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 4,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 5,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+)
+2014-06-18T09:54:16+02:00 INFO (6): array (
+  0 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => false,
+     'id' => 2,
+     'name' => NULL,
+     'description' => NULL,
+     'type' => NULL,
+  )),
+  1 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => false,
+     'id' => 3,
+     'name' => NULL,
+     'description' => NULL,
+     'type' => NULL,
+  )),
+  2 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => false,
+     'id' => 4,
+     'name' => NULL,
+     'description' => NULL,
+     'type' => NULL,
+  )),
+  3 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => false,
+     'id' => 5,
+     'name' => NULL,
+     'description' => NULL,
+     'type' => NULL,
+  )),
+)
+2014-06-18T09:54:16+02:00 INFO (6): array (
+  2 => 'nazwa (Nazwa produktu)',
+  3 => 'cena (Cena szablonu)',
+  4 => 'hash (identyfikator produktu)',
+  5 => 'kolor (kolor szablonu)',
+  6 => 'styl (style szablonu)',
+)
+2014-06-18T10:07:07+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 2,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 3,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 4,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 5,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+)
+2014-06-18T10:07:07+02:00 INFO (6): array (
+  0 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => false,
+     'id' => 2,
+     'name' => NULL,
+     'description' => NULL,
+     'type' => NULL,
+  )),
+  1 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => false,
+     'id' => 3,
+     'name' => NULL,
+     'description' => NULL,
+     'type' => NULL,
+  )),
+  2 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => false,
+     'id' => 4,
+     'name' => NULL,
+     'description' => NULL,
+     'type' => NULL,
+  )),
+  3 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => false,
+     'id' => 5,
+     'name' => NULL,
+     'description' => NULL,
+     'type' => NULL,
+  )),
+)
+2014-06-18T10:07:07+02:00 INFO (6): array (
+  2 => 'nazwa (Nazwa produktu)',
+  3 => 'cena (Cena szablonu)',
+  4 => 'hash (identyfikator produktu)',
+  5 => 'kolor (kolor szablonu)',
+  6 => 'styl (style szablonu)',
+)
+2014-06-18T10:10:41+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 2,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 3,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 4,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 5,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+)
+2014-06-18T10:11:53+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 2,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 3,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 4,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 5,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+)
+2014-06-18T10:11:53+02:00 INFO (6): array (
+  0 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => false,
+     'id' => 2,
+     'name' => NULL,
+     'description' => NULL,
+     'type' => NULL,
+  )),
+  1 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => false,
+     'id' => 3,
+     'name' => NULL,
+     'description' => NULL,
+     'type' => NULL,
+  )),
+  2 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => false,
+     'id' => 4,
+     'name' => NULL,
+     'description' => NULL,
+     'type' => NULL,
+  )),
+  3 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => false,
+     'id' => 5,
+     'name' => NULL,
+     'description' => NULL,
+     'type' => NULL,
+  )),
+)
+2014-06-18T10:11:53+02:00 INFO (6): array (
+  2 => 'nazwa (Nazwa produktu)',
+  3 => 'cena (Cena szablonu)',
+  4 => 'hash (identyfikator produktu)',
+  5 => 'kolor (kolor szablonu)',
+  6 => 'styl (style szablonu)',
+)
+2014-06-18T10:12:29+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 2,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 3,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 4,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 5,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+)
+2014-06-18T10:13:06+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 2,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 3,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 4,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 5,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+)
+2014-06-18T10:14:18+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 2,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 3,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 4,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 5,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+)
+2014-06-18T10:14:18+02:00 INFO (6): array (
+  0 => 25,
+  1 => 26,
+  2 => 27,
+  3 => 28,
+)
+2014-06-18T10:14:18+02:00 INFO (6): array (
+  2 => 'nazwa (Nazwa produktu)',
+  3 => 'cena (Cena szablonu)',
+  4 => 'hash (identyfikator produktu)',
+  5 => 'kolor (kolor szablonu)',
+  6 => 'styl (style szablonu)',
+)
+2014-06-18T10:15:27+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 2,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 3,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 4,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 5,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+)
+2014-06-18T10:15:27+02:00 INFO (6): array (
+  0 => 2,
+  1 => 3,
+  2 => 4,
+  3 => 5,
+)
+2014-06-18T10:15:27+02:00 INFO (6): array (
+  2 => 'nazwa (Nazwa produktu)',
+  3 => 'cena (Cena szablonu)',
+  4 => 'hash (identyfikator produktu)',
+  5 => 'kolor (kolor szablonu)',
+  6 => 'styl (style szablonu)',
+)
+2014-06-18T10:15:50+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 2,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 3,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 4,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 5,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+)
+2014-06-18T10:15:50+02:00 INFO (6): array (
+  0 => 2,
+  1 => 3,
+  2 => 4,
+  3 => 5,
+)
+2014-06-18T10:15:50+02:00 INFO (6): array (
+  2 => 'nazwa (Nazwa produktu)',
+  3 => 'cena (Cena szablonu)',
+  4 => 'hash (identyfikator produktu)',
+  5 => 'kolor (kolor szablonu)',
+  6 => 'styl (style szablonu)',
+)
+2014-06-18T10:19:27+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 25,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 2,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 26,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 3,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 27,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 4,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  3 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 28,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 5,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+)
+2014-06-18T10:19:27+02:00 INFO (6): array (
+  2 => 'nazwa (Nazwa produktu)',
+  3 => 'cena (Cena szablonu)',
+  4 => 'hash (identyfikator produktu)',
+  5 => 'kolor (kolor szablonu)',
+  6 => 'styl (style szablonu)',
+)
+2014-06-18T10:19:36+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 29,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 39,
+       'name' => 'fotoalbum',
+       'isCategory' => true,
+       'domains' => '22;25;26',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 2,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  1 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 30,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 39,
+       'name' => 'fotoalbum',
+       'isCategory' => true,
+       'domains' => '22;25;26',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 3,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+  2 => 
+  Application\Entity\AttributesGroups::__set_state(array(
+     'id' => 31,
+     'idProductTypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 39,
+       'name' => 'fotoalbum',
+       'isCategory' => true,
+       'domains' => '22;25;26',
+    )),
+     'idAttributes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\Attributes::__set_state(array(
+       '__initializer__' => 
+      Closure::__set_state(array(
+      )),
+       '__cloner__' => 
+      Closure::__set_state(array(
+      )),
+       '__isInitialized__' => false,
+       'id' => 4,
+       'name' => NULL,
+       'description' => NULL,
+       'type' => NULL,
+    )),
+  )),
+)
+2014-06-18T10:19:36+02:00 INFO (6): array (
+  2 => 'nazwa (Nazwa produktu)',
+  3 => 'cena (Cena szablonu)',
+  4 => 'hash (identyfikator produktu)',
+  5 => 'kolor (kolor szablonu)',
+  6 => 'styl (style szablonu)',
+)
+2014-06-18T10:56:08+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 47,
+     'name' => 'root',
+     'parentid' => 0,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  1 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 48,
+     'name' => 'a',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  2 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 49,
+     'name' => 'b',
+     'parentid' => 48,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  3 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 50,
+     'name' => 'c',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  4 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 51,
+     'name' => 'd',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  5 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 52,
+     'name' => 'e',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  6 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 53,
+     'name' => 'f',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+)
+2014-06-18T11:15:52+02:00 INFO (6): array (
+  'root' => 0,
+)
+2014-06-18T11:15:52+02:00 INFO (6): array (
+  'a' => 47,
+)
+2014-06-18T11:15:52+02:00 INFO (6): array (
+  'b' => 48,
+)
+2014-06-18T11:15:52+02:00 INFO (6): array (
+  'c' => 47,
+)
+2014-06-18T11:15:52+02:00 INFO (6): array (
+  'd' => 47,
+)
+2014-06-18T11:15:52+02:00 INFO (6): array (
+  'e' => 47,
+)
+2014-06-18T11:15:52+02:00 INFO (6): array (
+  'f' => 47,
+)
+2014-06-18T11:20:47+02:00 INFO (6): array (
+  0 => 
+  array (
+    'id' => 47,
+    'parent_id' => 0,
+    'name' => 'root',
+  ),
+  1 => 
+  array (
+    'id' => 48,
+    'parent_id' => 47,
+    'name' => 'a',
+  ),
+  2 => 
+  array (
+    'id' => 49,
+    'parent_id' => 48,
+    'name' => 'b',
+  ),
+  3 => 
+  array (
+    'id' => 50,
+    'parent_id' => 47,
+    'name' => 'c',
+  ),
+  4 => 
+  array (
+    'id' => 51,
+    'parent_id' => 47,
+    'name' => 'd',
+  ),
+  5 => 
+  array (
+    'id' => 52,
+    'parent_id' => 47,
+    'name' => 'e',
+  ),
+  6 => 
+  array (
+    'id' => 53,
+    'parent_id' => 47,
+    'name' => 'f',
+  ),
+)
+2014-06-18T11:23:40+02:00 INFO (6): array (
+  0 => 
+  array (
+    'id' => 47,
+    'parent_id' => 0,
+    'name' => 'root',
+  ),
+  47 => 
+  array (
+    'id' => 53,
+    'parent_id' => 47,
+    'name' => 'f',
+  ),
+  48 => 
+  array (
+    'id' => 49,
+    'parent_id' => 48,
+    'name' => 'b',
+  ),
+)
+2014-06-18T11:24:49+02:00 INFO (6): array (
+  0 => 
+  array (
+    0 => 
+    array (
+      'id' => 47,
+      'parent_id' => 0,
+      'name' => 'root',
+    ),
+  ),
+  47 => 
+  array (
+    0 => 
+    array (
+      'id' => 48,
+      'parent_id' => 47,
+      'name' => 'a',
+    ),
+    1 => 
+    array (
+      'id' => 50,
+      'parent_id' => 47,
+      'name' => 'c',
+    ),
+    2 => 
+    array (
+      'id' => 51,
+      'parent_id' => 47,
+      'name' => 'd',
+    ),
+    3 => 
+    array (
+      'id' => 52,
+      'parent_id' => 47,
+      'name' => 'e',
+    ),
+    4 => 
+    array (
+      'id' => 53,
+      'parent_id' => 47,
+      'name' => 'f',
+    ),
+  ),
+  48 => 
+  array (
+    0 => 
+    array (
+      'id' => 49,
+      'parent_id' => 48,
+      'name' => 'b',
+    ),
+  ),
+)
+2014-06-18T11:38:23+02:00 INFO (6): array (
+  0 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 47,
+       'parent_id' => 0,
+       'name' => 'root',
+    )),
+  ),
+  47 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 48,
+       'parent_id' => 47,
+       'name' => 'a',
+    )),
+    1 => 
+    stdClass::__set_state(array(
+       'id' => 50,
+       'parent_id' => 47,
+       'name' => 'c',
+    )),
+    2 => 
+    stdClass::__set_state(array(
+       'id' => 51,
+       'parent_id' => 47,
+       'name' => 'd',
+    )),
+    3 => 
+    stdClass::__set_state(array(
+       'id' => 52,
+       'parent_id' => 47,
+       'name' => 'e',
+    )),
+    4 => 
+    stdClass::__set_state(array(
+       'id' => 53,
+       'parent_id' => 47,
+       'name' => 'f',
+    )),
+  ),
+  48 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 49,
+       'parent_id' => 48,
+       'name' => 'b',
+    )),
+  ),
+)
+2014-06-18T11:46:38+02:00 INFO (6): array (
+  0 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 47,
+       'parent_id' => 0,
+       'name' => 'root',
+       'childs' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'id' => 48,
+           'parent_id' => 47,
+           'name' => 'a',
+           'childs' => 
+          array (
+            0 => 
+            stdClass::__set_state(array(
+               'id' => 49,
+               'parent_id' => 48,
+               'name' => 'b',
+            )),
+          ),
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'id' => 50,
+           'parent_id' => 47,
+           'name' => 'c',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'id' => 51,
+           'parent_id' => 47,
+           'name' => 'd',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'id' => 52,
+           'parent_id' => 47,
+           'name' => 'e',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'id' => 53,
+           'parent_id' => 47,
+           'name' => 'f',
+        )),
+      ),
+    )),
+  ),
+  47 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 48,
+       'parent_id' => 47,
+       'name' => 'a',
+       'childs' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'id' => 49,
+           'parent_id' => 48,
+           'name' => 'b',
+        )),
+      ),
+    )),
+    1 => 
+    stdClass::__set_state(array(
+       'id' => 50,
+       'parent_id' => 47,
+       'name' => 'c',
+    )),
+    2 => 
+    stdClass::__set_state(array(
+       'id' => 51,
+       'parent_id' => 47,
+       'name' => 'd',
+    )),
+    3 => 
+    stdClass::__set_state(array(
+       'id' => 52,
+       'parent_id' => 47,
+       'name' => 'e',
+    )),
+    4 => 
+    stdClass::__set_state(array(
+       'id' => 53,
+       'parent_id' => 47,
+       'name' => 'f',
+    )),
+  ),
+  48 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 49,
+       'parent_id' => 48,
+       'name' => 'b',
+    )),
+  ),
+)
+2014-06-18T12:13:33+02:00 INFO (6): array (
+  0 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 47,
+       'parent_id' => 0,
+       'name' => 'root',
+       'childs' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'id' => 48,
+           'parent_id' => 47,
+           'name' => 'a',
+           'childs' => 
+          array (
+            0 => 
+            stdClass::__set_state(array(
+               'id' => 49,
+               'parent_id' => 48,
+               'name' => 'b',
+            )),
+          ),
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'id' => 50,
+           'parent_id' => 47,
+           'name' => 'c',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'id' => 51,
+           'parent_id' => 47,
+           'name' => 'd',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'id' => 52,
+           'parent_id' => 47,
+           'name' => 'e',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'id' => 53,
+           'parent_id' => 47,
+           'name' => 'f',
+        )),
+      ),
+    )),
+  ),
+  47 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 48,
+       'parent_id' => 47,
+       'name' => 'a',
+       'childs' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'id' => 49,
+           'parent_id' => 48,
+           'name' => 'b',
+        )),
+      ),
+    )),
+    1 => 
+    stdClass::__set_state(array(
+       'id' => 50,
+       'parent_id' => 47,
+       'name' => 'c',
+    )),
+    2 => 
+    stdClass::__set_state(array(
+       'id' => 51,
+       'parent_id' => 47,
+       'name' => 'd',
+    )),
+    3 => 
+    stdClass::__set_state(array(
+       'id' => 52,
+       'parent_id' => 47,
+       'name' => 'e',
+    )),
+    4 => 
+    stdClass::__set_state(array(
+       'id' => 53,
+       'parent_id' => 47,
+       'name' => 'f',
+    )),
+  ),
+  48 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 49,
+       'parent_id' => 48,
+       'name' => 'b',
+    )),
+  ),
+)
+2014-06-23T08:41:03+02:00 INFO (6): {"0":[{"id":47,"parent":0,"text":"root","children":[{"id":48,"parent":47,"text":"a","children":[{"id":49,"parent":48,"text":"b"}]},{"id":50,"parent":47,"text":"c"},{"id":51,"parent":47,"text":"d"},{"id":52,"parent":47,"text":"e"},{"id":53,"parent":47,"text":"f"}]}],"47":[{"id":48,"parent":47,"text":"a","children":[{"id":49,"parent":48,"text":"b"}]},{"id":50,"parent":47,"text":"c"},{"id":51,"parent":47,"text":"d"},{"id":52,"parent":47,"text":"e"},{"id":53,"parent":47,"text":"f"}],"48":[{"id":49,"parent":48,"text":"b"}]}
+2014-06-23T08:42:20+02:00 INFO (6): array (
+  0 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 47,
+       'parent' => 0,
+       'text' => 'root',
+       'children' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'id' => 48,
+           'parent' => 47,
+           'text' => 'a',
+           'children' => 
+          array (
+            0 => 
+            stdClass::__set_state(array(
+               'id' => 49,
+               'parent' => 48,
+               'text' => 'b',
+            )),
+          ),
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'id' => 50,
+           'parent' => 47,
+           'text' => 'c',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'id' => 51,
+           'parent' => 47,
+           'text' => 'd',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'id' => 52,
+           'parent' => 47,
+           'text' => 'e',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'id' => 53,
+           'parent' => 47,
+           'text' => 'f',
+        )),
+      ),
+    )),
+  ),
+  47 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 48,
+       'parent' => 47,
+       'text' => 'a',
+       'children' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'id' => 49,
+           'parent' => 48,
+           'text' => 'b',
+        )),
+      ),
+    )),
+    1 => 
+    stdClass::__set_state(array(
+       'id' => 50,
+       'parent' => 47,
+       'text' => 'c',
+    )),
+    2 => 
+    stdClass::__set_state(array(
+       'id' => 51,
+       'parent' => 47,
+       'text' => 'd',
+    )),
+    3 => 
+    stdClass::__set_state(array(
+       'id' => 52,
+       'parent' => 47,
+       'text' => 'e',
+    )),
+    4 => 
+    stdClass::__set_state(array(
+       'id' => 53,
+       'parent' => 47,
+       'text' => 'f',
+    )),
+  ),
+  48 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 49,
+       'parent' => 48,
+       'text' => 'b',
+    )),
+  ),
+)
+2014-06-23T08:43:21+02:00 INFO (6): array (
+  0 => 
+  stdClass::__set_state(array(
+     'id' => 47,
+     'parent' => 0,
+     'text' => 'root',
+  )),
+  1 => 
+  stdClass::__set_state(array(
+     'id' => 48,
+     'parent' => 47,
+     'text' => 'a',
+  )),
+  2 => 
+  stdClass::__set_state(array(
+     'id' => 49,
+     'parent' => 48,
+     'text' => 'b',
+  )),
+  3 => 
+  stdClass::__set_state(array(
+     'id' => 50,
+     'parent' => 47,
+     'text' => 'c',
+  )),
+  4 => 
+  stdClass::__set_state(array(
+     'id' => 51,
+     'parent' => 47,
+     'text' => 'd',
+  )),
+  5 => 
+  stdClass::__set_state(array(
+     'id' => 52,
+     'parent' => 47,
+     'text' => 'e',
+  )),
+  6 => 
+  stdClass::__set_state(array(
+     'id' => 53,
+     'parent' => 47,
+     'text' => 'f',
+  )),
+)
+2014-06-23T08:50:20+02:00 INFO (6): array (
+  0 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 47,
+       'parent' => 0,
+       'text' => 'root',
+    )),
+  ),
+  47 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 48,
+       'parent' => 47,
+       'text' => 'a',
+    )),
+    1 => 
+    stdClass::__set_state(array(
+       'id' => 50,
+       'parent' => 47,
+       'text' => 'c',
+    )),
+    2 => 
+    stdClass::__set_state(array(
+       'id' => 51,
+       'parent' => 47,
+       'text' => 'd',
+    )),
+    3 => 
+    stdClass::__set_state(array(
+       'id' => 52,
+       'parent' => 47,
+       'text' => 'e',
+    )),
+    4 => 
+    stdClass::__set_state(array(
+       'id' => 53,
+       'parent' => 47,
+       'text' => 'f',
+    )),
+  ),
+  48 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 49,
+       'parent' => 48,
+       'text' => 'b',
+    )),
+  ),
+)
+2014-06-23T09:02:20+02:00 INFO (6): array (
+  0 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 47,
+       'parent' => 0,
+       'text' => 'root',
+    )),
+  ),
+  47 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 48,
+       'parent' => 47,
+       'text' => 'a',
+    )),
+    1 => 
+    stdClass::__set_state(array(
+       'id' => 50,
+       'parent' => 47,
+       'text' => 'c',
+    )),
+    2 => 
+    stdClass::__set_state(array(
+       'id' => 51,
+       'parent' => 47,
+       'text' => 'd',
+    )),
+    3 => 
+    stdClass::__set_state(array(
+       'id' => 52,
+       'parent' => 47,
+       'text' => 'e',
+    )),
+    4 => 
+    stdClass::__set_state(array(
+       'id' => 53,
+       'parent' => 47,
+       'text' => 'f',
+    )),
+  ),
+  48 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 49,
+       'parent' => 48,
+       'text' => 'b',
+    )),
+  ),
+)
+2014-06-23T09:07:09+02:00 INFO (6): array (
+  0 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 47,
+       'parent' => 0,
+       'text' => 'root',
+    )),
+  ),
+  47 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 48,
+       'parent' => 47,
+       'text' => 'a',
+    )),
+    1 => 
+    stdClass::__set_state(array(
+       'id' => 50,
+       'parent' => 47,
+       'text' => 'c',
+    )),
+    2 => 
+    stdClass::__set_state(array(
+       'id' => 51,
+       'parent' => 47,
+       'text' => 'd',
+    )),
+    3 => 
+    stdClass::__set_state(array(
+       'id' => 52,
+       'parent' => 47,
+       'text' => 'e',
+    )),
+    4 => 
+    stdClass::__set_state(array(
+       'id' => 53,
+       'parent' => 47,
+       'text' => 'f',
+    )),
+  ),
+  48 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 49,
+       'parent' => 48,
+       'text' => 'b',
+    )),
+  ),
+)
+2014-06-23T09:08:05+02:00 INFO (6): array (
+  0 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 47,
+       'parent' => 0,
+       'text' => 'root',
+    )),
+  ),
+  47 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 48,
+       'parent' => 47,
+       'text' => 'a',
+    )),
+    1 => 
+    stdClass::__set_state(array(
+       'id' => 50,
+       'parent' => 47,
+       'text' => 'c',
+    )),
+    2 => 
+    stdClass::__set_state(array(
+       'id' => 51,
+       'parent' => 47,
+       'text' => 'd',
+    )),
+    3 => 
+    stdClass::__set_state(array(
+       'id' => 52,
+       'parent' => 47,
+       'text' => 'e',
+    )),
+    4 => 
+    stdClass::__set_state(array(
+       'id' => 53,
+       'parent' => 47,
+       'text' => 'f',
+    )),
+  ),
+  48 => 
+  array (
+    0 => 
+    stdClass::__set_state(array(
+       'id' => 49,
+       'parent' => 48,
+       'text' => 'b',
+    )),
+  ),
+)
+2014-06-23T09:31:38+02:00 INFO (6): [{"id":47,"parent":"#","text":"root"},{"id":47,"parent":0,"text":"root"},{"id":48,"parent":47,"text":"a"},{"id":49,"parent":48,"text":"b"},{"id":50,"parent":47,"text":"c"},{"id":51,"parent":47,"text":"d"},{"id":52,"parent":47,"text":"e"},{"id":53,"parent":47,"text":"f"}]
+2014-06-23T09:32:56+02:00 INFO (6): [{"id":47,"parent":"#","text":"root"},{"id":47,"parent":0,"text":"root"},{"id":48,"parent":47,"text":"a"},{"id":49,"parent":48,"text":"b"},{"id":50,"parent":47,"text":"c"},{"id":51,"parent":47,"text":"d"},{"id":52,"parent":47,"text":"e"},{"id":53,"parent":47,"text":"f"}]
+2014-06-23T09:33:35+02:00 INFO (6): array (
+  0 => 
+  stdClass::__set_state(array(
+     'id' => 47,
+     'parent' => '#',
+     'text' => 'root',
+  )),
+  1 => 
+  stdClass::__set_state(array(
+     'id' => 47,
+     'parent' => 0,
+     'text' => 'root',
+  )),
+  2 => 
+  stdClass::__set_state(array(
+     'id' => 48,
+     'parent' => 47,
+     'text' => 'a',
+  )),
+  3 => 
+  stdClass::__set_state(array(
+     'id' => 49,
+     'parent' => 48,
+     'text' => 'b',
+  )),
+  4 => 
+  stdClass::__set_state(array(
+     'id' => 50,
+     'parent' => 47,
+     'text' => 'c',
+  )),
+  5 => 
+  stdClass::__set_state(array(
+     'id' => 51,
+     'parent' => 47,
+     'text' => 'd',
+  )),
+  6 => 
+  stdClass::__set_state(array(
+     'id' => 52,
+     'parent' => 47,
+     'text' => 'e',
+  )),
+  7 => 
+  stdClass::__set_state(array(
+     'id' => 53,
+     'parent' => 47,
+     'text' => 'f',
+  )),
+)
+2014-06-23T09:34:08+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 47,
+     'name' => 'root',
+     'parentid' => 0,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  1 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 48,
+     'name' => 'a',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  2 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 49,
+     'name' => 'b',
+     'parentid' => 48,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  3 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 50,
+     'name' => 'c',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  4 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 51,
+     'name' => 'd',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  5 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 52,
+     'name' => 'e',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  6 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 53,
+     'name' => 'f',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+)
+2014-06-23T09:34:08+02:00 INFO (6): array (
+  0 => 
+  stdClass::__set_state(array(
+     'id' => 47,
+     'parent' => '#',
+     'text' => 'root',
+  )),
+  1 => 
+  stdClass::__set_state(array(
+     'id' => 47,
+     'parent' => 0,
+     'text' => 'root',
+  )),
+  2 => 
+  stdClass::__set_state(array(
+     'id' => 48,
+     'parent' => 47,
+     'text' => 'a',
+  )),
+  3 => 
+  stdClass::__set_state(array(
+     'id' => 49,
+     'parent' => 48,
+     'text' => 'b',
+  )),
+  4 => 
+  stdClass::__set_state(array(
+     'id' => 50,
+     'parent' => 47,
+     'text' => 'c',
+  )),
+  5 => 
+  stdClass::__set_state(array(
+     'id' => 51,
+     'parent' => 47,
+     'text' => 'd',
+  )),
+  6 => 
+  stdClass::__set_state(array(
+     'id' => 52,
+     'parent' => 47,
+     'text' => 'e',
+  )),
+  7 => 
+  stdClass::__set_state(array(
+     'id' => 53,
+     'parent' => 47,
+     'text' => 'f',
+  )),
+)
+2014-06-23T09:42:59+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 47,
+     'name' => 'root',
+     'parentid' => 0,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  1 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 48,
+     'name' => 'a',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  2 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 49,
+     'name' => 'b',
+     'parentid' => 48,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  3 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 50,
+     'name' => 'c',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  4 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 51,
+     'name' => 'd',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  5 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 52,
+     'name' => 'e',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  6 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 53,
+     'name' => 'f',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+)
+2014-06-23T09:42:59+02:00 INFO (6): array (
+  0 => 
+  stdClass::__set_state(array(
+     'id' => 47,
+     'parent' => '#',
+     'text' => 'root',
+  )),
+  1 => 
+  stdClass::__set_state(array(
+     'id' => 48,
+     'parent' => 47,
+     'text' => 'a',
+  )),
+  2 => 
+  stdClass::__set_state(array(
+     'id' => 49,
+     'parent' => 48,
+     'text' => 'b',
+  )),
+  3 => 
+  stdClass::__set_state(array(
+     'id' => 50,
+     'parent' => 47,
+     'text' => 'c',
+  )),
+  4 => 
+  stdClass::__set_state(array(
+     'id' => 51,
+     'parent' => 47,
+     'text' => 'd',
+  )),
+  5 => 
+  stdClass::__set_state(array(
+     'id' => 52,
+     'parent' => 47,
+     'text' => 'e',
+  )),
+  6 => 
+  stdClass::__set_state(array(
+     'id' => 53,
+     'parent' => 47,
+     'text' => 'f',
+  )),
+)
+2014-06-23T09:44:14+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 47,
+     'name' => 'root',
+     'parentid' => 0,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  1 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 48,
+     'name' => 'a',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  2 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 49,
+     'name' => 'b',
+     'parentid' => 48,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  3 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 50,
+     'name' => 'c',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  4 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 51,
+     'name' => 'd',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  5 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 52,
+     'name' => 'e',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  6 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 53,
+     'name' => 'f',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+)
+2014-06-23T09:44:14+02:00 INFO (6): array (
+  0 => 
+  stdClass::__set_state(array(
+     'id' => 47,
+     'parent' => '#',
+     'text' => 'root',
+  )),
+  1 => 
+  stdClass::__set_state(array(
+     'id' => 48,
+     'parent' => 47,
+     'text' => 'a',
+  )),
+  2 => 
+  stdClass::__set_state(array(
+     'id' => 49,
+     'parent' => 48,
+     'text' => 'b',
+  )),
+  3 => 
+  stdClass::__set_state(array(
+     'id' => 50,
+     'parent' => 47,
+     'text' => 'c',
+  )),
+  4 => 
+  stdClass::__set_state(array(
+     'id' => 51,
+     'parent' => 47,
+     'text' => 'd',
+  )),
+  5 => 
+  stdClass::__set_state(array(
+     'id' => 52,
+     'parent' => 47,
+     'text' => 'e',
+  )),
+  6 => 
+  stdClass::__set_state(array(
+     'id' => 53,
+     'parent' => 47,
+     'text' => 'f',
+  )),
+)
+2014-06-23T10:04:03+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 47,
+     'name' => 'root',
+     'parentid' => 0,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  1 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 48,
+     'name' => 'a',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  2 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 49,
+     'name' => 'b',
+     'parentid' => 48,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  3 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 50,
+     'name' => 'c',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  4 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 51,
+     'name' => 'd',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  5 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 52,
+     'name' => 'e',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  6 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 53,
+     'name' => 'f',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+)
+2014-06-23T10:04:03+02:00 INFO (6): array (
+  0 => 
+  stdClass::__set_state(array(
+     'id' => 47,
+     'parent' => '#',
+     'text' => 'root',
+  )),
+  1 => 
+  stdClass::__set_state(array(
+     'id' => 48,
+     'parent' => 47,
+     'text' => 'a',
+  )),
+  2 => 
+  stdClass::__set_state(array(
+     'id' => 49,
+     'parent' => 48,
+     'text' => 'b',
+  )),
+  3 => 
+  stdClass::__set_state(array(
+     'id' => 50,
+     'parent' => 47,
+     'text' => 'c',
+  )),
+  4 => 
+  stdClass::__set_state(array(
+     'id' => 51,
+     'parent' => 47,
+     'text' => 'd',
+  )),
+  5 => 
+  stdClass::__set_state(array(
+     'id' => 52,
+     'parent' => 47,
+     'text' => 'e',
+  )),
+  6 => 
+  stdClass::__set_state(array(
+     'id' => 53,
+     'parent' => 47,
+     'text' => 'f',
+  )),
+)
+2014-06-23T10:06:36+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 47,
+     'name' => 'root',
+     'parentid' => 0,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  1 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 48,
+     'name' => 'a',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  2 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 49,
+     'name' => 'b',
+     'parentid' => 48,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  3 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 50,
+     'name' => 'c',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  4 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 51,
+     'name' => 'd',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  5 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 52,
+     'name' => 'e',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  6 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 53,
+     'name' => 'f',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+)
+2014-06-23T10:06:36+02:00 INFO (6): array (
+  0 => 
+  stdClass::__set_state(array(
+     'id' => 47,
+     'parent' => '#',
+     'text' => 'root',
+  )),
+  1 => 
+  stdClass::__set_state(array(
+     'id' => 48,
+     'parent' => 47,
+     'text' => 'a',
+  )),
+  2 => 
+  stdClass::__set_state(array(
+     'id' => 49,
+     'parent' => 48,
+     'text' => 'b',
+  )),
+  3 => 
+  stdClass::__set_state(array(
+     'id' => 50,
+     'parent' => 47,
+     'text' => 'c',
+  )),
+  4 => 
+  stdClass::__set_state(array(
+     'id' => 51,
+     'parent' => 47,
+     'text' => 'd',
+  )),
+  5 => 
+  stdClass::__set_state(array(
+     'id' => 52,
+     'parent' => 47,
+     'text' => 'e',
+  )),
+  6 => 
+  stdClass::__set_state(array(
+     'id' => 53,
+     'parent' => 47,
+     'text' => 'f',
+  )),
+)
+2014-06-23T10:14:21+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 47,
+     'name' => 'root',
+     'parentid' => 0,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  1 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 48,
+     'name' => 'a',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  2 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 49,
+     'name' => 'b',
+     'parentid' => 48,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  3 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 50,
+     'name' => 'c',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  4 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 51,
+     'name' => 'd',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  5 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 52,
+     'name' => 'e',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+  6 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 53,
+     'name' => 'f',
+     'parentid' => 47,
+     'idproducttypes' => 
+    Application\Entity\ProductTypes::__set_state(array(
+       'id' => 38,
+       'name' => 'fotoksiazka',
+       'isCategory' => true,
+       'domains' => '22;23;25;',
+    )),
+  )),
+)
+2014-06-23T10:14:21+02:00 INFO (6): array (
+  0 => 
+  stdClass::__set_state(array(
+     'id' => 47,
+     'parent' => '#',
+     'text' => 'root',
+  )),
+  1 => 
+  stdClass::__set_state(array(
+     'id' => 48,
+     'parent' => 47,
+     'text' => 'a',
+  )),
+  2 => 
+  stdClass::__set_state(array(
+     'id' => 49,
+     'parent' => 48,
+     'text' => 'b',
+  )),
+  3 => 
+  stdClass::__set_state(array(
+     'id' => 50,
+     'parent' => 47,
+     'text' => 'c',
+  )),
+  4 => 
+  stdClass::__set_state(array(
+     'id' => 51,
+     'parent' => 47,
+     'text' => 'd',
+  )),
+  5 => 
+  stdClass::__set_state(array(
+     'id' => 52,
+     'parent' => 47,
+     'text' => 'e',
+  )),
+  6 => 
+  stdClass::__set_state(array(
+     'id' => 53,
+     'parent' => 47,
+     'text' => 'f',
+  )),
+)
+2014-06-23T10:47:28+02:00 INFO (6): array (
+  0 => '2',
+)
+2014-06-23T10:56:49+02:00 INFO (6): array (
+  0 => '2',
+)
+2014-06-23T11:07:03+02:00 INFO (6): array (
+  0 => '2',
+)
+2014-06-23T11:07:03+02:00 INFO (6): yes yes
+2014-06-23T11:22:55+02:00 INFO (6): array (
+  0 => '2',
+  4 => '6',
+)
+2014-06-23T11:24:08+02:00 INFO (6): array (
+  0 => '2',
+  4 => '6',
+)
+2014-06-23T11:25:14+02:00 INFO (6): array (
+  0 => '2',
+)
+2014-06-23T11:26:42+02:00 INFO (6): array (
+)
+2014-06-23T11:26:54+02:00 INFO (6): array (
+  3 => '5',
+  4 => '6',
+)
+2014-06-23T14:33:57+02:00 INFO (6): xxxxxxxxxxxxx

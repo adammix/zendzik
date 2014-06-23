@@ -18,15 +18,35 @@
 	echo $this->formRow($form->get('attributes'));
 	
 	echo $this->formRow($form->get('domains'));
-?>	
-
-<?php require_once 'tree_form.phtml'; ?>	
 	
-<?php	
+	echo $this->formRow($form->get('is_category'));
+    echo $this->formHidden($form->get('categories'));
+?>
+
+<?php require_once 'tree_form.phtml'; ?>
+	
+<?php
 	echo $this->formSubmit($form->get('submit'));
 	echo $this->form()->closeTag();
 ?>
+
 </div>
+<script type="text/javascript">
+    function check_category(){
+        var checkbox = $('input[name="is_category"]');
+        if($(checkbox).is(':checked')){
+            //alert('on');
+            $('.categories_tree').show();
+        }else{
+            //alert('off');
+            $('.categories_tree').hide();
+        }
+    }
+    $('input[name="is_category"]').change(function(){
+        check_category();
+    });
+    check_category();
+</script>
 
 
 

@@ -17,8 +17,15 @@ Application\Entity\ProductTypes:
             length: 45
             fixed: false
             comment: ''
-        is_category:
+        isCategory:
             type: boolean
             nullable: true
+            comment: ''
+            column: is_category
+        domains:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
             comment: ''
     lifecycleCallbacks: {  }

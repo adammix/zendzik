@@ -91,11 +91,11 @@ div.container a.brand {
 	display: block;
 	width: 20px;
 	height: 20px;
-	background: #ff1b1b;
+	background: #ff0000;
 	border-radius: 10px;
 	margin-left: 20px;
 }
-/* = = = = FORMULARZ TYU PRODUKTU = = = = */
+/* = = = = FORMULARZ TYPU PRODUKTU = = = = */
 #AddProductType{
 	
 }
@@ -106,10 +106,6 @@ div.container a.brand {
 #AddProductType input[type="submit"]{
 	display: block;	
 }
-
-
-
-
 
 
 /*

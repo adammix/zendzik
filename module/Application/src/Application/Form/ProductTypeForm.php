@@ -55,8 +55,23 @@ class ProductTypeForm extends Form
                 ),
             ),
         ));
-		
-		$this->add(array(
+
+        $this->add(array(
+            'name' => 'is_category',
+            'type' => 'Zend\Form\Element\Checkbox',
+            'attributes' => array(
+                'class'	=> 'checkbox-inline'
+            ),
+            'options' => array(
+                'label' => 'Włącz kategorie',
+                'checked_value' => '1',
+                'label_attributes' => array(
+                    'class'  => 'domain_checkbox'
+                ),
+            ),
+        ));
+
+        $this->add(array(
             'name' => 'categories',
             'type' => 'Hidden',
         ));
@@ -73,7 +88,9 @@ class ProductTypeForm extends Form
 		));
 	}
 	public function populateForm($product_type){
-		$this->get('id')->setValue($product_type->getId());
-		$this->get('name')->setValue($user->getName());
+		// $this->get('id')->setValue($product_type['id']);
+		// $this->get('name')->setValue($product_type->getName());
+        // $this->get('domains')->setValue($product_type->getName());
+
 	}
 }

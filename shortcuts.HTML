@@ -29,6 +29,46 @@ YML doctrine
 
 //komenda służąca do generowania klas annotation z yml wszsytko dzieki konfiguracji lokalizacji plikow yml w modules.config.php i konfiguracji Doctrina na yml
 
-!!!!!!!!!!!!!!!!!!! php zf.php orm:generate-entities module/Application/src/ !!!!!!!!!!!!!!!!!!!!!!!!!  
+!!!!!!!!!!!!!!!!!!! php zf.php orm:generate-entities module/Application/src/ !!!!!!!!!!!!!!!!!!!!!!!!!
 
 vendor\bin\doctrine-module orm:convert-mapping --namespace="Application\Entity\\" --force  --from-database yml module\Application\src\
+
+
+{"0":[{ "id":47,
+        "parent":0,
+        "text":"root",
+        "children":[{   "id":48,
+                        "parent":47,
+                        "text":"a",
+                        "children":[{   "id":49,
+                                        "parent":48,
+                                        "text":"b"}
+                                    ]},
+                    {   "id":50,
+                        "parent":47,
+                        "text":"c"},
+                    {   "id":51,
+                        "parent":47,
+                        "text":"d"},
+                    {   "id":52,
+                        "parent":47,
+                        "text":"e"},
+                    {   "id":53,
+                        "parent":47,
+                        "text":"f"}
+                    ]
+        }],
+ "47":[{"id":48,
+        "parent":47,
+        "text":"a",
+        "children":[{   "id":49,
+                        "parent":48,
+                        "text":"b"}
+                    ]},
+        {"id":50,
+        "parent":47,
+        "text":"c"},
+        {"id":51,
+        "parent":47,
+        "text":"d"},
+        {"id":52,"parent":47,"text":"e"},{"id":53,"parent":47,"text":"f"}],"48":[{"id":49,"parent":48,"text":"b"}]}
