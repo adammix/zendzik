@@ -4161,3 +4161,956 @@
 2014-06-24T09:13:53+02:00 INFO (6): yyyyyyy
 2014-06-24T09:15:04+02:00 INFO (6): yyyyyyy
 2014-06-24T09:15:04+02:00 INFO (6): yyyyyyy
+2014-06-26T10:12:19+02:00 INFO (6):
+2014-06-27T10:36:57+02:00 INFO (6): 22;25;26
+2014-06-27T10:53:14+02:00 INFO (6): 22;25;26
+2014-06-27T10:53:14+02:00 INFO (6): attr_2
+2014-06-27T10:53:14+02:00 INFO (6): attr_3
+2014-06-27T10:53:14+02:00 INFO (6): attr_4
+2014-06-27T10:59:37+02:00 INFO (6): array (
+  0 => '22',
+  1 => '25',
+  2 => '26',
+)
+2014-06-27T10:59:37+02:00 INFO (6): attr_2
+2014-06-27T10:59:37+02:00 INFO (6): attr_3
+2014-06-27T10:59:37+02:00 INFO (6): attr_4
+2014-06-27T12:58:21+02:00 INFO (6): attr_2
+2014-06-27T12:58:21+02:00 INFO (6): attr_3
+2014-06-27T12:58:21+02:00 INFO (6): attr_4
+2014-06-27T12:58:21+02:00 INFO (6): attr_5
+2014-06-27T12:58:21+02:00 INFO (6): attr_6
+2014-07-03T10:37:34+02:00 INFO (6): 1
+2014-07-04T14:12:24+02:00 INFO (6):
+2014-07-04T14:12:52+02:00 INFO (6): false
+2014-07-04T14:14:14+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 100,
+     'name' => 'root',
+     'parentid' => 0,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  1 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 101,
+     'name' => 'dsdsds',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  2 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 102,
+     'name' => 'dsdsdsd',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  3 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 103,
+     'name' => 'dsdsdsds',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  4 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 104,
+     'name' => 'dsdsdsdsdsf',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  5 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 105,
+     'name' => 'fdfdfdfdfd',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+)
+2014-07-04T14:30:08+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 100,
+     'name' => 'root',
+     'parentid' => 0,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  1 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 101,
+     'name' => 'dsdsds',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  2 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 102,
+     'name' => 'dsdsdsd',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  3 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 103,
+     'name' => 'dsdsdsds',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  4 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 104,
+     'name' => 'dsdsdsdsdsf',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  5 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 105,
+     'name' => 'fdfdfdfdfd',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+)
+2014-07-04T14:30:41+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 100,
+     'name' => 'root',
+     'parentid' => 0,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  1 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 101,
+     'name' => 'dsdsds',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  2 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 102,
+     'name' => 'dsdsdsd',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  3 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 103,
+     'name' => 'dsdsdsds',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  4 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 104,
+     'name' => 'dsdsdsdsdsf',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  5 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 105,
+     'name' => 'fdfdfdfdfd',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+)
+2014-07-04T14:37:14+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 100,
+     'name' => 'root',
+     'parentid' => 0,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  1 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 101,
+     'name' => 'dsdsds',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  2 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 102,
+     'name' => 'dsdsdsd',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  3 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 103,
+     'name' => 'dsdsdsds',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  4 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 104,
+     'name' => 'dsdsdsdsdsf',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  5 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 105,
+     'name' => 'fdfdfdfdfd',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+)
+2014-07-04T14:37:31+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 100,
+     'name' => 'root',
+     'parentid' => 0,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  1 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 101,
+     'name' => 'dsdsds',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  2 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 102,
+     'name' => 'dsdsdsd',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  3 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 103,
+     'name' => 'dsdsdsds',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  4 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 104,
+     'name' => 'dsdsdsdsdsf',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  5 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 105,
+     'name' => 'fdfdfdfdfd',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+)
+2014-07-04T14:37:31+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 100,
+     'name' => 'root',
+     'parentid' => 0,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  1 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 101,
+     'name' => 'dsdsds',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  2 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 102,
+     'name' => 'dsdsdsd',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  3 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 103,
+     'name' => 'dsdsdsds',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  4 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 104,
+     'name' => 'dsdsdsdsdsf',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  5 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 105,
+     'name' => 'fdfdfdfdfd',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+)
+2014-07-04T14:37:41+02:00 INFO (6): array (
+  0 => 
+  Application\Entity\Categories::__set_state(array(
+     'id' => 100,
+     'name' => 'root',
+     'parentid' => 0,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  1 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 101,
+     'name' => 'dsdsds',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  2 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 102,
+     'name' => 'dsdsdsd',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  3 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 103,
+     'name' => 'dsdsdsds',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  4 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 104,
+     'name' => 'dsdsdsdsdsf',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+  5 => 
+  DoctrineORMModule\Proxy\__CG__\Application\Entity\Categories::__set_state(array(
+     '__initializer__' => 
+    Closure::__set_state(array(
+    )),
+     '__cloner__' => 
+    Closure::__set_state(array(
+    )),
+     '__isInitialized__' => true,
+     'id' => 105,
+     'name' => 'fdfdfdfdfd',
+     'parentid' => 100,
+     'idproducttypes' => 
+    DoctrineORMModule\Proxy\__CG__\Application\Entity\ProductTypes::__set_state(array(
+       '__initializer__' => NULL,
+       '__cloner__' => NULL,
+       '__isInitialized__' => true,
+       'id' => 50,
+       'name' => 'test z kategoriami',
+       'isCategory' => true,
+       'domains' => '22;23;25;26',
+    )),
+  )),
+)

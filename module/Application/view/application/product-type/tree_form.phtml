@@ -1,0 +1,185 @@
+<!-- = = = = = = = = = DRZEWO KATEGORII = = = = = = = = = = -->
+<div class="categories_tree">
+	<div class="tree_buttons">
+		<span class="btn btn-success" type="button" onclick="category_create();"><i class="glyphicon glyphicon-asterisk"></i>Dodaj</span>
+		<span class="btn btn-warning" type="button" onclick="category_rename();"><i class="glyphicon glyphicon-pencil"></i>Edytuj</span>
+		<span class="btn btn-danger" type="button" onclick="category_delete();"><i class="glyphicon glyphicon-remove"></i>Uśuń</span>
+		<input type="text" value="" style="box-shadow:inset 0 0 4px #eee; width:120px; margin:0; padding:6px 12px; border-radius:4px; border:1px solid silver; font-size:1.1em;" id="demo_q" placeholder="Szukaj">
+	</div>
+	<div id="jstree"></div>
+</div>
+
+<script type="text/javascript">
+
+	//dodanie kategorii
+	function category_create() {
+
+		var ref = $('#jstree').jstree(true),
+		sel = ref.get_selected();
+		if(!sel.length) { return false; }
+        //console.log(sel[0]);
+		sel = sel[0];
+		sel = ref.create_node( sel, {"text" : "Nowa kategoria" ,"type":"default"});
+        //alert(sel[0]);
+		if(sel) {
+			ref.edit(sel);
+		}
+	};
+	//zmiana nazwy kategorii
+	function category_rename() {
+		var ref = $('#jstree').jstree(true);
+		var sel = ref.get_selected();
+		if(!sel.length) { return false; }
+		sel = sel[0];
+		ref.edit(sel);
+	};
+	//usuniecie kategorii
+	/**
+	 * @todo add username when user has been logged in
+	 */
+	function category_delete() {
+		var result = confirm("Are you siur ??");
+		if (result==true) {
+		    var ref = $('#jstree').jstree(true),
+			sel = ref.get_selected();
+			console.log(sel);
+			if(!sel.length || sel == "j1_1") { return false; }
+			ref.delete_node(sel);
+		}
+	};
+
+    /**
+     *
+     * funkcja zamieniająca drzewo kategorii na Obiekt JSON
+     */
+    function generate_tree_data(){
+        var ref = $('#jstree').jstree(true),
+        sel = ref.get_json('#', { 'flat': true });
+        var serialized = JSON.stringify(sel);
+        $('input[name="categories"]').val(serialized);
+        // get_json ([obj, options])
+        //var json = jQuery.jstree._reference('#jstree').get_json(-1, ['data-title', 'data-link-type', 'id', 'class']);
+        console.log(serialized);
+    };
+
+    /**
+     * funkcja zamieniająca Obiekt JSON na drzewo kategorii
+     */
+    function generate_data_tree(json_data){
+
+        var json_data_object = $.parseJSON(json_data);
+        //console.log(json_data_object);
+        var ref = $('#jstree').jstree({
+            'core' : {
+                "animation" : 0,
+                "check_callback" : true,
+                "themes" : { "stripes" : true,
+                             "variant" : "large" },
+                'data' : json_data_object
+            },
+            "types" : {
+                "#" : {
+                    "max_children" : 10,
+                    "max_depth" : 4,
+                    "valid_children" : ["root", "default"],
+                    "icon" : "glyphicon glyphicon-glass",
+                },
+                "root" : {
+                    "icon" : "glyphicon glyphicon-film",
+                    "valid_children" : ["root", "default"]
+                },
+                "default" : {
+                    "icon" : "glyphicon glyphicon-book",
+                    "valid_children" : ["default","default"]
+                },
+                "file" : {
+                    "icon" : "glyphicon glyphicon-book",
+                    "valid_children" : []
+                }
+            },
+            "plugins" : [
+                "contextmenu", "dnd", "search",
+                "state", "types", "wholerow"
+            ]
+        });
+    };
+
+    /**
+     * funkcja czyszcząca input przechowujący drzewo kategorii
+     */
+    function clear_tree_data(){
+        $('input[name="categories"]').val('');
+    };
+
+    /**
+     * Przechwycenie akcji submit na formularzu
+     */
+
+    $('#AddProductType').on('submit', function(e) {
+        if($(this).find('input[name="is_category"]').is(':checked') == true){
+            generate_tree_data();
+        }else{
+            clear_tree_data();
+        }
+    });
+
+	
+	$(function () {
+		//wyszukiwarka
+		var to = false;
+		$('#demo_q').keyup(function () {
+			if(to) { clearTimeout(to); }
+			to = setTimeout(function () {
+				var v = $('#demo_q').val();
+				$('#jstree').jstree(true).search(v);
+			}, 250);
+		});
+		
+		//tworzenie nowego obiektu kategorii
+		$('#jstree').jstree({
+		  "core" : {
+		    "animation" : 0,
+		    "check_callback" : true,
+		    "themes" : { "stripes" : true,
+		    			 "variant" : "large" },
+		    'data' : [
+		       {
+                 'id' : '0',
+		         'text' : 'root',
+		         'state' : {
+		           'opened' : true,
+		           'selected' : true,
+		         },
+		         "type":"#"
+		      }
+		    ]
+		  },
+		  "types" : {
+		    "#" : {
+		      	"max_children" : 10, 
+		      	"max_depth" : 4, 
+		      	"valid_children" : ["root", "default"],
+		      	"icon" : "glyphicon glyphicon-glass",
+		    },
+		    "root" : {
+		      	"icon" : "glyphicon glyphicon-film",
+		      	"valid_children" : ["root", "default"]
+		    },
+		    "default" : {
+		    	"icon" : "glyphicon glyphicon-heart",
+		      	"valid_children" : ["default","default"]
+		    },
+		    "file" : {
+		      	"icon" : "glyphicon glyphicon-book",
+		      	"valid_children" : []
+		    }
+		  },
+		  "plugins" : [
+		    "contextmenu", "dnd", "search",
+		    "state", "types", "wholerow"
+		  ]
+		});
+	}); 
+
+</script>
+<!-- = = = = = = = = = DRZEWO KATEGORII END = = = = = = = = = = -->

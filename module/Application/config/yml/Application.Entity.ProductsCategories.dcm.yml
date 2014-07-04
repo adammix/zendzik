@@ -1,11 +1,11 @@
-Application\Entity\ProductsAttributes:
+Application\Entity\ProductsCategories:
     type: entity
-    table: products_attributes
+    table: products_categories
     indexes:
-        IDX_E3C4666EBAAF4009:
+        IDX_E3C5666EBAAF4009:
             columns:
-                - attributes_id
-        IDX_E3C4666E6C8A81A9:
+                - category_id
+        IDX_E3C5666E6C8A81A9:
             columns:
                 - products_id
     id:
@@ -17,14 +17,6 @@ Application\Entity\ProductsAttributes:
             id: true
             generator:
                 strategy: IDENTITY
-    fields:
-        attributeValue:
-            type: string
-            nullable: true
-            length: 45
-            fixed: false
-            comment: ''
-            column: attribute_value
     manyToOne:
         domains:
             targetEntity: Application\Entity\Domains
@@ -44,13 +36,13 @@ Application\Entity\ProductsAttributes:
                 products_id:
                     referencedColumnName: id
             orphanRemoval: false
-        attributes:
-            targetEntity: Application\Entity\Attributes
+        categories:
+            targetEntity: Application\Entity\Categories
             cascade: {  }
             mappedBy: null
             inversedBy: null
             joinColumns:
-                attributes_id:
+                category_id:
                     referencedColumnName: id
             orphanRemoval: false
     lifecycleCallbacks: {  }

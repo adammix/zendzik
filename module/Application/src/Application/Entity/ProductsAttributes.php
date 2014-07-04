@@ -4,12 +4,7 @@ namespace Application\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * ProductsAttributes
- *
- * @ORM\Table(name="products_attributes", indexes={@ORM\Index(name="IDX_E3C4666EBAAF4009", columns={"attributes_id"}), @ORM\Index(name="IDX_E3C4666E6C8A81A9", columns={"products_id"}), @ORM\Index(name="IDX_E3C4666E75ABF08", columns={"views_id_views"})})
- * @ORM\Entity
- */
+
 class ProductsAttributes
 {
     /**
@@ -37,16 +32,6 @@ class ProductsAttributes
      * })
      */
     private $products;
-
-    /**
-     * @var \Application\Entity\Views
-     *
-     * @ORM\ManyToOne(targetEntity="Application\Entity\Views")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="views_id_views", referencedColumnName="id_views")
-     * })
-     */
-    private $viewsViews;
 
     /**
      * @var \Application\Entity\Attributes
@@ -117,29 +102,6 @@ class ProductsAttributes
     }
 
     /**
-     * Set viewsViews
-     *
-     * @param \Application\Entity\Views $viewsViews
-     * @return ProductsAttributes
-     */
-    public function setViewsViews(\Application\Entity\Views $viewsViews = null)
-    {
-        $this->viewsViews = $viewsViews;
-
-        return $this;
-    }
-
-    /**
-     * Get viewsViews
-     *
-     * @return \Application\Entity\Views 
-     */
-    public function getViewsViews()
-    {
-        return $this->viewsViews;
-    }
-
-    /**
      * Set attributes
      *
      * @param \Application\Entity\Attributes $attributes
@@ -160,5 +122,33 @@ class ProductsAttributes
     public function getAttributes()
     {
         return $this->attributes;
+    }
+    /**
+     * @var \Application\Entity\Domains
+     */
+    private $domains;
+
+
+    /**
+     * Set domains
+     *
+     * @param \Application\Entity\Domains $domains
+     * @return ProductsAttributes
+     */
+    public function setDomains(\Application\Entity\Domains $domains = null)
+    {
+        $this->domains = $domains;
+
+        return $this;
+    }
+
+    /**
+     * Get domains
+     *
+     * @return \Application\Entity\Domains 
+     */
+    public function getDomains()
+    {
+        return $this->domains;
     }
 }

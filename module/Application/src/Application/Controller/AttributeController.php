@@ -52,34 +52,12 @@ class AttributeController extends AbstractActionController
 
     public function editAction()
     {
-    	
-    	$id = (int)$this->getEvent()->getRouteMatch()->getParam('id');
-		$id ? $id : $id = $this->getRequest()->getPost('id');
-		
-		$form = new AttributeForm();
-		
-		$attribute = $this->getObjectManager()->find('\Application\Entity\Attributes', $id);
-		
-		$attribute_options = $this->getObjectManager()->getRepository('\Application\Entity\AttributesOption')->findBy(array('idAttributes' => $id));
-		
-		$data_options = array();
-		if(!empty($attribute_options)){
-			foreach ($attribute_options as $temp_attribute) {
-				$data_options[$temp_attribute->getId()] = $temp_attribute->getValue();
-			}
-		}
-		//die(var_dump($data_options));
-		$data = array(
-		    'id'    => $attribute->getId(),
-		    'attribute_name' => $attribute->getName(),
-		    'attribute_desc' => $attribute->getDescription(),
-		    'attribute_type' => $attribute->getType(),
-		    'attribute_options' => json_encode($data_options),
-		);
-		$form->setData($data);
-		
 		if($this->request->isPost()){
-			
+
+            //die(var_dump($_POST));
+            $id = $this->getRequest()->getPost('id');
+            $attribute = $this->getObjectManager()->find('\Application\Entity\Attributes', $id);
+
 			$is_option = $this->getRequest()->getPost('attribute_type');
 		 	$attribute  ->setName($this->getRequest()->getPost('attribute_name'))
 						->setDescription($this->getRequest()->getPost('attribute_desc'))
@@ -126,6 +104,32 @@ class AttributeController extends AbstractActionController
 			//return new ViewModel(array('unserialized' => $unserilized, 'form' => $form));
 			return  $this->redirect()->toRoute('attribute', array());
 		}
+
+        $id = (int)$this->getEvent()->getRouteMatch()->getParam('id');
+
+        $form = new AttributeForm();
+
+        $attribute = $this->getObjectManager()->find('\Application\Entity\Attributes', $id);
+
+        $attribute_options = $this->getObjectManager()->getRepository('\Application\Entity\AttributesOption')->findBy(array('idAttributes' => $id));
+
+        $data_options = array();
+        if(!empty($attribute_options)){
+            foreach ($attribute_options as $temp_attribute) {
+                $data_options[$temp_attribute->getId()] = $temp_attribute->getValue();
+            }
+        }
+        //die(var_dump($data_options));
+        $data = array(
+            'id'    => $attribute->getId(),
+            'attribute_name' => $attribute->getName(),
+            'attribute_desc' => $attribute->getDescription(),
+            'attribute_type' => $attribute->getType(),
+            'attribute_options' => json_encode($data_options),
+        );
+
+        $form->setData($data);
+        //$form->get('attribute_type')->setAttribute('readonly', 'readonly');
 		
 		return new ViewModel(array('form' => $form));
 		

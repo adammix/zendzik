@@ -92,6 +92,20 @@ return array(
 			        ),
 				),
 			),
+            'product' => array(
+                'type' => 'segment',
+                'options' => array(
+                    'route' => '/product[/][:action][/:id]',
+                    'constraints' => array(
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                        'id' => '[0-9]+',
+                    ),
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Product',
+                        'action'     => 'index',
+                    ),
+                ),
+            ),
 			'domains' => array(
 				'type' => 'segment',
 				'options' => array(
@@ -148,7 +162,7 @@ return array(
             'Application\Controller\Categories' => 'Application\Controller\CategoriesController',
             'Application\Controller\ProductType' => 'Application\Controller\ProductTypeController',
             'Application\Controller\Domains' => 'Application\Controller\DomainsController',
-            
+            'Application\Controller\Product' => 'Application\Controller\ProductController',
             
         ),
     ),

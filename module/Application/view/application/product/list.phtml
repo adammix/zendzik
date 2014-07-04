@@ -1,0 +1,25 @@
+<div class="row">
+
+    <?php if (isset($products)) : ?>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Typ Produktu</th>
+            </tr>
+            </thead>
+            <?php foreach($products as $product): ?>
+                <tbody>
+                <tr>
+                    <td><?php echo $product->getId(); ?></td>
+                    <td><?php echo $product->getIdProductTypes()->getName(); ?></td>
+                    <td>
+                        <a href="<?php echo $this->url('product', array('action'=>'edit', 'id' => $product->getId()));?>"><i class="btn btn-warning btn-circle fa fa-pencil fa-fw"></i></a>
+                        <a href="<?php echo $this->url('product', array('action'=>'delete', 'id' => $product->getId()));?>"><i class="btn btn-danger btn-circle fa fa-ban fa-fw"></i></a>
+                    </td>
+                </tr>
+                </tbody>
+            <?php endforeach; ?>
+        </table>
+    <?php endif; ?>
+</div>

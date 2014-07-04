@@ -98,4 +98,32 @@ class DomainsProducts
     {
         return $this->idProducts;
     }
+    /**
+     * @var string
+     */
+    private $status;
+
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     * @return DomainsProducts
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string 
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
 }

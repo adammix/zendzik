@@ -126,5 +126,9 @@ div.container a.brand {
 	margin: 0 0 20px;
 	border-bottom: 1px solid #428BCA;
 }
+/*Formularz dodania nowego produktu*/
 
+#AddProduct label{
+    display: block;
+}
 

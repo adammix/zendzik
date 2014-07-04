@@ -31,8 +31,7 @@ class AttributeForm extends Form
 		$this->add(array( 
             'name' => 'attribute_desc', 
             'type' => 'Zend\Form\Element\Text', 
-            'attributes' => array( 
-                'required' => 'required', 
+            'attributes' => array(
                 'class'	=> 'form-control'
             ), 
             'options' => array( 

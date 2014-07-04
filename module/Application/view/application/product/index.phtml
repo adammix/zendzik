@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="action_buttons">
+        <!--<a class="" href="<?php echo $this->url('products-type', array('action'=>'add'));?>"><i class="btn btn-success btn-circle fa fa-plus-square fa-fw"></i> Nowy Typ Produktu</a>-->
+    </div>
+    <?php if (isset($product_types)) : ?>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Rodzaj produktu</th>
+                <th></th>
+            </tr>
+            </thead>
+            <?php foreach($product_types as $product_type): ?>
+                <tbody>
+                <tr>
+                    <td><?php echo $product_type->getName(); ?></td>
+                    <td>
+                        <a href="<?php echo $this->url('product', array('action'=>'add', 'id' => $product_type->getId()));?>"><i class="btn btn-success btn-circle fa fa-plus fa-fw"></i></a>
+                        <a href="<?php echo $this->url('product', array('action'=>'list', 'id' => $product_type->getId()));?>"><i class="btn btn-info btn-circle fa fa-list fa-fw"></i></a>
+                    </td>
+                </tr>
+                </tbody>
+            <?php endforeach; ?>
+        </table>
+    <?php endif; ?>
+</div>

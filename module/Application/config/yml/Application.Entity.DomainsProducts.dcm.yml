@@ -17,6 +17,13 @@ Application\Entity\DomainsProducts:
             id: true
             generator:
                 strategy: IDENTITY
+    fields:
+        status:
+            type: string
+            nullable: true
+            length: 45
+            fixed: false
+            comment: ''
     manyToOne:
         idDomains:
             targetEntity: Application\Entity\Domains
