@@ -51,10 +51,11 @@ class AttributeForm extends Form
                 'label' => 'Typ atrybutu', 
                 'value_options' => array(
                     '0' => 'zwykły tekst', 
-                    '1' => 'lista predefiniowana', 
+                    '1' => 'lista predefiniowana',
+                    '2' => 'zdjęcie',
                 ),
             ), 
-        )); 
+        ));
  
         $this->add(array( 
             'name' => 'attribute_options', 

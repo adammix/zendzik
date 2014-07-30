@@ -1,4 +1,6 @@
+<div style="text-align: center;">
 <h1><?php echo $this->translate('A 404 error occurred') ?></h1>
+<img style="margin: 0 auto;" src="<?php echo $this->basePath().'/img/error.png' ?>" alt="Error "/>
 <h2><?php echo $this->message ?></h2>
 
 <?php if (isset($this->reason) && $this->reason): ?>
@@ -105,3 +107,4 @@ if (isset($this->controller_class)
 <?php endif ?>
 
 <?php endif ?>
+</div>

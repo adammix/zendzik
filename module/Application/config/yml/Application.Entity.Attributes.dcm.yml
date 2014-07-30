@@ -24,7 +24,7 @@ Application\Entity\Attributes:
             fixed: false
             comment: ''
         type:
-            type: boolean
+            type: integer
             nullable: true
             comment: ''
     lifecycleCallbacks: {  }

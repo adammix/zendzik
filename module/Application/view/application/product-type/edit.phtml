@@ -1,8 +1,50 @@
 <?php
 $title = 'Edytuj typ Produktu';
 $this->headTitle($title);
-
 ?>
+<!-- = = = = = = = = = = WIDOKI = = = = = = = = = = = -->
+<h3>Widoki produktu</h3>
+<div>
+    <a href="<?php echo $this->url('views', array('action' => 'add', 'id' => $this->product_type_id)); ?>" title="Dodaj nowy widok"><i class="btn btn-success btn-circle fa fa-plus-square fa-fw"></i> Dodaj nowy widok</a>
+</div>
+
+<div>
+    <?php if (isset($views)){ ?>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nazwa</th>
+                <th>Typ widoku</th>
+                <th>Aktywność</th>
+                <th></th>
+            </tr>
+            </thead>
+            <?php foreach($views as $view): ?>
+                <?php
+                $view->getIsActive() ? $activity = 'dot_active' : $activity = 'dot_none_active';
+                $view->getType() == 1 ? $type = 'widok grupowy' : $type = 'widok domenowy';
+                ?>
+                <tbody>
+                <tr>
+                    <td><?php echo $view->getId(); ?></td>
+                    <td><?php echo $view->getName(); ?></td>
+                    <td><?php echo $type ?></td>
+                    <td class="<?php echo $activity; ?>"><span></span></td>
+                    <td>
+                        <a href="<?php echo $this->url('views', array('action'=>'edit', 'id' => $view->getId()));?>"><i class="btn btn-warning btn-circle fa fa-pencil fa-fw"></i></a>
+                        <a href="<?php echo $this->url('views', array('action'=>'delete', 'id' => $view->getId()));?>"><i class="btn btn-danger btn-circle fa fa-ban fa-fw"></i></a>
+                    </td>
+                </tr>
+                </tbody>
+            <?php endforeach; ?>
+        </table>
+    <?php }else{ ?>
+        Brak zdefiniowanych widoków dla tego typu produktu, obowiązuje tylko widok bazowy.
+    <?php } ?>
+</div>
+
+<!-- = = = = = = = = = = WIDOKI  END = = = = = = = =  -->
 <h1><?php echo $this->escapeHtml($title); ?></h1>
 <div class="form-group">
     <?php
@@ -34,6 +76,9 @@ $this->headTitle($title);
     ?>
 
 </div>
+
+
+
 <script type="text/javascript">
     function check_category(){
         var checkbox = $('input[name="is_category"]');

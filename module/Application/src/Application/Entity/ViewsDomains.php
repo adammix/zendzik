@@ -5,9 +5,9 @@ namespace Application\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * DomainsProducts
+ * ViewsDomains
  */
-class DomainsProducts
+class ViewsDomains
 {
     /**
      * @var integer
@@ -15,9 +15,9 @@ class DomainsProducts
     private $id;
 
     /**
-     * @var string
+     * @var boolean
      */
-    private $status;
+    private $isDefault;
 
     /**
      * @var \Application\Entity\Domains
@@ -25,9 +25,9 @@ class DomainsProducts
     private $idDomains;
 
     /**
-     * @var \Application\Entity\Products
+     * @var \Application\Entity\Views
      */
-    private $idProducts;
+    private $idViews;
 
 
     /**
@@ -41,33 +41,33 @@ class DomainsProducts
     }
 
     /**
-     * Set status
+     * Set isDefault
      *
-     * @param string $status
-     * @return DomainsProducts
+     * @param boolean $isDefault
+     * @return ViewsDomains
      */
-    public function setStatus($status)
+    public function setIsDefault($isDefault)
     {
-        $this->status = $status;
+        $this->isDefault = $isDefault;
 
         return $this;
     }
 
     /**
-     * Get status
+     * Get isDefault
      *
-     * @return string 
+     * @return boolean 
      */
-    public function getStatus()
+    public function getIsDefault()
     {
-        return $this->status;
+        return $this->isDefault;
     }
 
     /**
      * Set idDomains
      *
      * @param \Application\Entity\Domains $idDomains
-     * @return DomainsProducts
+     * @return ViewsDomains
      */
     public function setIdDomains(\Application\Entity\Domains $idDomains = null)
     {
@@ -87,25 +87,25 @@ class DomainsProducts
     }
 
     /**
-     * Set idProducts
+     * Set idViews
      *
-     * @param \Application\Entity\Products $idProducts
-     * @return DomainsProducts
+     * @param \Application\Entity\Views $idViews
+     * @return ViewsDomains
      */
-    public function setIdProducts(\Application\Entity\Products $idProducts = null)
+    public function setIdViews(\Application\Entity\Views $idViews = null)
     {
-        $this->idProducts = $idProducts;
+        $this->idViews = $idViews;
 
         return $this;
     }
 
     /**
-     * Get idProducts
+     * Get idViews
      *
-     * @return \Application\Entity\Products 
+     * @return \Application\Entity\Views 
      */
-    public function getIdProducts()
+    public function getIdViews()
     {
-        return $this->idProducts;
+        return $this->idViews;
     }
 }

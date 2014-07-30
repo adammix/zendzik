@@ -106,6 +106,20 @@ return array(
                     ),
                 ),
             ),
+            'views' => array(
+                'type' => 'segment',
+                'options' => array(
+                    'route' => '/views[/][:action][/:id]',
+                    'constraints' => array(
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                        'id' => '[0-9]+',
+                    ),
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Views',
+                        'action'     => 'index',
+                    ),
+                ),
+            ),
 			'domains' => array(
 				'type' => 'segment',
 				'options' => array(
@@ -163,6 +177,7 @@ return array(
             'Application\Controller\ProductType' => 'Application\Controller\ProductTypeController',
             'Application\Controller\Domains' => 'Application\Controller\DomainsController',
             'Application\Controller\Product' => 'Application\Controller\ProductController',
+            'Application\Controller\Views' => 'Application\Controller\ViewsController',
             
         ),
     ),
@@ -181,6 +196,11 @@ return array(
         'template_path_stack' => array(
             __DIR__ . '/../view',
         ),
+    ),
+    'view_helpers' => array(
+        'invokables'=> array(
+            'menu_helper' => 'Application\View\Helper\MenuHelper' ,
+        )
     ),
     // Placeholder for console routes
     'console' => array(

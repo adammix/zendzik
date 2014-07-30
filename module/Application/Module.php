@@ -19,6 +19,11 @@ class Module
         $eventManager        = $e->getApplication()->getEventManager();
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
+		
+		$serviceManager = $e->getApplication()->getServiceManager();
+		$serviceManager->get('viewhelpermanager')->setFactory('MenuHelper', function ($sm) use ($e) {
+        	return new \Application\View\Helper\MenuHelper($sm); 
+    	});
     }
 
     public function getConfig()

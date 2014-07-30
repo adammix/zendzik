@@ -4,45 +4,35 @@ namespace Application\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-
+/**
+ * ProductsAttributes
+ */
 class ProductsAttributes
 {
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="attribute_value", type="string", length=45, nullable=true)
      */
     private $attributeValue;
 
     /**
+     * @var \Application\Entity\Views
+     */
+    private $views;
+
+    /**
      * @var \Application\Entity\Products
-     *
-     * @ORM\ManyToOne(targetEntity="Application\Entity\Products")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="products_id", referencedColumnName="id")
-     * })
      */
     private $products;
 
     /**
      * @var \Application\Entity\Attributes
-     *
-     * @ORM\ManyToOne(targetEntity="Application\Entity\Attributes")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="attributes_id", referencedColumnName="id")
-     * })
      */
     private $attributes;
-
 
 
     /**
@@ -76,6 +66,29 @@ class ProductsAttributes
     public function getAttributeValue()
     {
         return $this->attributeValue;
+    }
+
+    /**
+     * Set views
+     *
+     * @param \Application\Entity\Views $views
+     * @return ProductsAttributes
+     */
+    public function setViews(\Application\Entity\Views $views = null)
+    {
+        $this->views = $views;
+
+        return $this;
+    }
+
+    /**
+     * Get views
+     *
+     * @return \Application\Entity\Views 
+     */
+    public function getViews()
+    {
+        return $this->views;
     }
 
     /**
@@ -122,33 +135,5 @@ class ProductsAttributes
     public function getAttributes()
     {
         return $this->attributes;
-    }
-    /**
-     * @var \Application\Entity\Domains
-     */
-    private $domains;
-
-
-    /**
-     * Set domains
-     *
-     * @param \Application\Entity\Domains $domains
-     * @return ProductsAttributes
-     */
-    public function setDomains(\Application\Entity\Domains $domains = null)
-    {
-        $this->domains = $domains;
-
-        return $this;
-    }
-
-    /**
-     * Get domains
-     *
-     * @return \Application\Entity\Domains 
-     */
-    public function getDomains()
-    {
-        return $this->domains;
     }
 }

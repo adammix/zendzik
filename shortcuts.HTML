@@ -7,9 +7,9 @@ vendor\bin\doctrine-module orm:generate-entities module\Application\src\ --gener
 
 vendor\bin\doctrine-module orm:convert-mapping --namespace="Application\Entity\\" --force  --from-database annotation module\Application\src\
 
-<!-- ZAPISUJE STRUKTURE ENTITYS DO BAZY DANYCH --> 
+<!-- ZAPISUJE STRUKTURE ENTITYS DO BAZY DANYCH -->
 
-vendor\bin\doctrine-module orm:schema-tool:update --force
+php zf.php orm:schema-tool:update --force
 
 <!-- SPRAWDZA ZGODNOŚĆ BAZY DANYCH Z ENTITYS --> 
 
@@ -34,41 +34,18 @@ YML doctrine
 vendor\bin\doctrine-module orm:convert-mapping --namespace="Application\Entity\\" --force  --from-database yml module\Application\src\
 
 
-{"0":[{ "id":47,
-        "parent":0,
-        "text":"root",
-        "children":[{   "id":48,
-                        "parent":47,
-                        "text":"a",
-                        "children":[{   "id":49,
-                                        "parent":48,
-                                        "text":"b"}
-                                    ]},
-                    {   "id":50,
-                        "parent":47,
-                        "text":"c"},
-                    {   "id":51,
-                        "parent":47,
-                        "text":"d"},
-                    {   "id":52,
-                        "parent":47,
-                        "text":"e"},
-                    {   "id":53,
-                        "parent":47,
-                        "text":"f"}
-                    ]
-        }],
- "47":[{"id":48,
-        "parent":47,
-        "text":"a",
-        "children":[{   "id":49,
-                        "parent":48,
-                        "text":"b"}
-                    ]},
-        {"id":50,
-        "parent":47,
-        "text":"c"},
-        {"id":51,
-        "parent":47,
-        "text":"d"},
-        {"id":52,"parent":47,"text":"e"},{"id":53,"parent":47,"text":"f"}],"48":[{"id":49,"parent":48,"text":"b"}]}
+        /* = = =  QUERY BUILDER  = = = = */
+
+
+$qb = $this->getObjectManager()->createQueryBuilder();
+$qb->select('u')
+->from('Application\Entity\User', 'u')
+->where('u.id = ?1')
+->orderBy('u.login', 'ASC')
+->setParameter(1, 1);
+$query = $qb->getQuery();
+$result = $query->getResult();
+//$this->getServiceLocator()->get('log')->info($result);
+
+
+        /*  - - - - - - - - - - - - - - - - */

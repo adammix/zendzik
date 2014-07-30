@@ -1,13 +1,10 @@
-Application\Entity\AttributesGroups:
+Application\Entity\Views:
     type: entity
-    table: attributes_groups
+    table: views
     indexes:
-        IDX_2C1BF02E94111EA7:
+        IDX_12F09C87E361C6CF:
             columns:
-                - id_attributes
-        IDX_B3BA5A5A46642309:
-            columns:
-                - id_product_type
+                - id_products_type
     id:
         id:
             type: integer
@@ -17,6 +14,23 @@ Application\Entity\AttributesGroups:
             id: true
             generator:
                 strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            comment: ''
+        isActive:
+            type: boolean
+            nullable: true
+            comment: ''
+            column: is_active
+        type:
+            type: integer
+            nullable: true
+            comment: ''
+            column: type
     manyToOne:
         idProductType:
             targetEntity: Application\Entity\ProductTypes
@@ -24,16 +38,7 @@ Application\Entity\AttributesGroups:
             mappedBy: null
             inversedBy: null
             joinColumns:
-                id_product_type:
-                    referencedColumnName: id
-            orphanRemoval: false
-        idAttributes:
-            targetEntity: Application\Entity\Attributes
-            cascade: {  }
-            mappedBy: null
-            inversedBy: null
-            joinColumns:
-                id_attributes:
+                id_products_type:
                     referencedColumnName: id
             orphanRemoval: false
     lifecycleCallbacks: {  }

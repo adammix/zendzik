@@ -5,9 +5,9 @@ namespace Application\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Attributes
+ * Views
  */
-class Attributes
+class Views
 {
     /**
      * @var integer
@@ -20,14 +20,19 @@ class Attributes
     private $name;
 
     /**
-     * @var string
+     * @var boolean
      */
-    private $description;
+    private $isActive;
 
     /**
      * @var integer
      */
     private $type;
+
+    /**
+     * @var \Application\Entity\ProductTypes
+     */
+    private $idProductType;
 
 
     /**
@@ -44,7 +49,7 @@ class Attributes
      * Set name
      *
      * @param string $name
-     * @return Attributes
+     * @return Views
      */
     public function setName($name)
     {
@@ -64,33 +69,33 @@ class Attributes
     }
 
     /**
-     * Set description
+     * Set isActive
      *
-     * @param string $description
-     * @return Attributes
+     * @param boolean $isActive
+     * @return Views
      */
-    public function setDescription($description)
+    public function setIsActive($isActive)
     {
-        $this->description = $description;
+        $this->isActive = $isActive;
 
         return $this;
     }
 
     /**
-     * Get description
+     * Get isActive
      *
-     * @return string 
+     * @return boolean 
      */
-    public function getDescription()
+    public function getIsActive()
     {
-        return $this->description;
+        return $this->isActive;
     }
 
     /**
      * Set type
      *
      * @param integer $type
-     * @return Attributes
+     * @return Views
      */
     public function setType($type)
     {
@@ -107,5 +112,28 @@ class Attributes
     public function getType()
     {
         return $this->type;
+    }
+
+    /**
+     * Set idProductType
+     *
+     * @param \Application\Entity\ProductTypes $idProductType
+     * @return Views
+     */
+    public function setIdProductType(\Application\Entity\ProductTypes $idProductType = null)
+    {
+        $this->idProductType = $idProductType;
+
+        return $this;
+    }
+
+    /**
+     * Get idProductType
+     *
+     * @return \Application\Entity\ProductTypes 
+     */
+    public function getIdProductType()
+    {
+        return $this->idProductType;
     }
 }

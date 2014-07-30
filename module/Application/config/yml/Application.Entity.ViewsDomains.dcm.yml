@@ -1,21 +1,21 @@
-Application\Entity\Views:
+Application\Entity\ViewsDomains:
     type: entity
-    table: views
+    table: views_domains
     indexes:
-        IDX_11F09C873700F4DC:
+        IDX_12F09D873700F4DC:
             columns:
-                - domains_id
-        IDX_11F09C87E361B6CF:
+                - id_domains
+        FK_E3C4666EE272FF2E:
             columns:
-                - id_products
+                - id_view
     id:
-        idViews:
+        id:
             type: integer
             nullable: false
             unsigned: false
             comment: ''
             id: true
-            column: id_views
+            column: id
             generator:
                 strategy: IDENTITY
     fields:
@@ -25,22 +25,22 @@ Application\Entity\Views:
             comment: ''
             column: is_default
     manyToOne:
-        domains:
+        idDomains:
             targetEntity: Application\Entity\Domains
             cascade: {  }
             mappedBy: null
             inversedBy: null
             joinColumns:
-                domains_id:
+                id_domains:
                     referencedColumnName: id
             orphanRemoval: false
-        idProducts:
-            targetEntity: Application\Entity\Products
+        idViews:
+            targetEntity: Application\Entity\Views
             cascade: {  }
             mappedBy: null
             inversedBy: null
             joinColumns:
-                id_products:
+                id_view:
                     referencedColumnName: id
             orphanRemoval: false
     lifecycleCallbacks: {  }

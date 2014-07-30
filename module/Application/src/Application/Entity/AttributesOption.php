@@ -6,38 +6,23 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * AttributesOption
- *
- * @ORM\Table(name="attributes_option", indexes={@ORM\Index(name="IDX_86F0C9EE94111EA7", columns={"id_attributes"})})
- * @ORM\Entity
  */
 class AttributesOption
 {
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="value", type="string", length=255, nullable=true)
      */
     private $value;
 
     /**
      * @var \Application\Entity\Attributes
-     *
-     * @ORM\ManyToOne(targetEntity="Application\Entity\Attributes")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_attributes", referencedColumnName="id")
-     * })
      */
     private $idAttributes;
-
 
 
     /**

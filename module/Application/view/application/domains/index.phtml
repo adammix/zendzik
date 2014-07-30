@@ -15,7 +15,7 @@
                     </thead>
                 <?php foreach($domains as $domain): ?>
                 	<?php 
-                		$domain->getIsActive() ? $activity = 'url_active' : $activity = 'url_none';
+                		$domain->getIsActive() ? $activity = 'active' : $activity = 'none_active';
                 	?>
                     <tbody>
                     <tr>

@@ -1,13 +1,6 @@
 Application\Entity\ProductsAttributes:
     type: entity
     table: products_attributes
-    indexes:
-        IDX_E3C4666EBAAF4009:
-            columns:
-                - attributes_id
-        IDX_E3C4666E6C8A81A9:
-            columns:
-                - products_id
     id:
         id:
             type: integer
@@ -21,18 +14,18 @@ Application\Entity\ProductsAttributes:
         attributeValue:
             type: string
             nullable: true
-            length: 45
+            length: 256
             fixed: false
             comment: ''
             column: attribute_value
     manyToOne:
-        domains:
-            targetEntity: Application\Entity\Domains
+        views:
+            targetEntity: Application\Entity\Views
             cascade: {  }
             mappedBy: null
             inversedBy: null
             joinColumns:
-                domains_id:
+                view_id:
                     referencedColumnName: id
             orphanRemoval: false
         products:

@@ -6,45 +6,28 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Categories
- *
- * @ORM\Table(name="categories", indexes={@ORM\Index(name="IDX_3AF3466816A2507F", columns={"idProductTypes"})})
- * @ORM\Entity
  */
 class Categories
 {
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="name", type="string", length=100, nullable=false)
      */
     private $name;
 
     /**
      * @var integer
-     *
-     * @ORM\Column(name="parentId", type="integer", nullable=false)
      */
     private $parentid;
 
     /**
      * @var \Application\Entity\ProductTypes
-     *
-     * @ORM\ManyToOne(targetEntity="Application\Entity\ProductTypes")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="idProductTypes", referencedColumnName="id")
-     * })
      */
     private $idproducttypes;
-
 
 
     /**

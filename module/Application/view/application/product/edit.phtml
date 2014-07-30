@@ -1,14 +1,15 @@
 <div class="row">
     <h1>Edycja produktu</h1>
     <?php
-    $form->setAttribute('action', $this->url('product', array('action' => 'add')));
+    $form->setAttribute('action', $this->url('product', array('action' => 'edit')));
     $form->get('submit')->setValue('Zapisz');
     $form->prepare();
     echo $this->form($form);
-    require_once 'tree_form.phtml';
+    require_once('tree_form.phtml');
     ?>
     <script type="text/javascript">
         //console.log($('input[name="categories"]').val());
         generate_data_tree($('input[name="categories"]').val());
+        $('#jstree').jstree(true).clear_state();
     </script>
 </div>

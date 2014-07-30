@@ -79,7 +79,7 @@ div.container a.brand {
 	float: left;
 	margin-right: 15px;
 }
-.url_active span{
+.dot_active span{
 	display: block;
 	width: 20px;
 	height: 20px;
@@ -87,7 +87,7 @@ div.container a.brand {
 	border-radius: 10px;
 	margin-left: 20px;
 }
-.url_none span{
+.dot_none_active span{
 	display: block;
 	width: 20px;
 	height: 20px;
@@ -99,10 +99,12 @@ div.container a.brand {
 #AddProductType{
 	
 }
+#AddView label,
 #AddProductType label{
 	display: block;
 	width: 50%;
 }
+#AddView input[type="submit"],
 #AddProductType input[type="submit"]{
 	display: block;	
 }
@@ -131,4 +133,12 @@ div.container a.brand {
 #AddProduct label{
     display: block;
 }
-
+.flash-messages{
+    width: 100%;
+    border: 2px solid #cb2027;
+    margin: 0 0 20px;
+    border-radius: 10px;
+}
+.form-thumbnail{
+    width: 25%;
+}

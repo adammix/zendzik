@@ -4,7 +4,7 @@
 		<input type="text" value="" style="box-shadow:inset 0 0 4px #eee; width:120px; margin:0; padding:6px 12px; border-radius:4px; border:1px solid silver; font-size:1.1em;" id="demo_q" placeholder="Szukaj">
 	</div>
 	<div id="jstree"></div>
-</div>
+</div>`
 
 <script type="text/javascript">
 
@@ -51,6 +51,7 @@
      *
      */
     function generate_tree_data(){
+        console.log('yyyyyy');
         var ref = $('#jstree').jstree(true),
         sel = ref.get_json('#', { 'flat': true });
         var serialized = JSON.stringify(sel);
@@ -65,10 +66,14 @@
      * funkcja zamieniająca Obiekt JSON na drzewo kategorii
      */
     function generate_data_tree(json_data){
-
         var json_data_object = $.parseJSON(json_data);
-        //console.log(json_data_object);
-        var ref = $('#jstree').jstree({
+
+//        json_data_object[1]['state'].selected = false;
+//        console.log(json_data_object[1]['state'].selected);
+
+        console.log(json_data_object);
+
+        var ref = $('#jstree').jstree("destroy").jstree({
             'core' : {
                 "animation" : 0,
                 "check_callback" : true,
@@ -97,10 +102,10 @@
                 }
             },
             "checkbox" : {
-                "three_state" : false
+                "three_state" : true
             },
             "plugins" : [
-                "contextmenu", "search",
+                "contextmenu", "dnd", "search", "json_data",
                 "state", "types", "wholerow", "checkbox",
             ]
         });
@@ -118,7 +123,12 @@
      */
 
     $('#AddProduct').on('submit', function(e) {
-        generate_tree_data();
+        console.log('xxxxxxxxx');
+        if($(this).find('input[name="categories"]').length > 0){
+            generate_tree_data();
+        }else{
+
+        }
     });
 
 	
@@ -136,13 +146,13 @@
         /**
          * open all nodes on load
          */
-//        $("#jstree").bind("open_node.jstree", function (e, data)
-//        {
-//            $(data.rslt.obj).find('li').each(function (i)
-//            {
-//                data.inst.open_node($(this));
-//            });
-//        });
+        $("#jstree").bind("open_node.jstree", function (e, data)
+        {
+            $(data.rslt.obj).find('li').each(function (i)
+            {
+                data.inst.open_node($(this));
+            });
+        });
 
 	});
 

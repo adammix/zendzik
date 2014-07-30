@@ -16,7 +16,7 @@
 						->prependStylesheet($this->basePath() . '/css/plugins/jstree/style.css')//jstree styles
 						->prependStylesheet($this->basePath() . '/css/style.css')//asz styles
 						->prependStylesheet($this->basePath() . '/css/sb-admin.css')//SB Admin CSS - Include with every page
-						->prependStylesheet($this->basePath() . '/css/plugins/timeline/timeline.css')
+						->prependStylesheet($this->basePath() . '/css/plugins/dataTables/dataTables.bootstrap.css')//data table for list view
 						//->prependStylesheet($this->basePath() . '/css/plugins/morris/morris-0.4.3.min.css') //Page-Level Plugin CSS - Dashboard 
 						->prependStylesheet($this->basePath() . '/font-awesome/css/font-awesome.css') 
 						->prependStylesheet($this->basePath() . '/css/bootstrap.css')
@@ -27,6 +27,8 @@
         <?php echo $this->headScript()
 			//default
 			//->prependFile($this->basePath() . '/js/demo/dashboard-demo.js')//Page-Level Demo Scripts - Dashboard - Use for reference
+			->prependFile($this->basePath() . '/js/plugins/dataTables/dataTables.bootstrap.js')
+			->prependFile($this->basePath() . '/js/plugins/dataTables/jquery.dataTables.js')
 			->prependFile($this->basePath() . '/js/jstree.min.js')
 			->prependFile($this->basePath() . '/js/sb-admin.js')//SB Admin Scripts - Include with every page
 			//->prependFile($this->basePath() . '/js/plugins/morris/morris.js')
@@ -283,7 +285,11 @@
                         <li><a href="/attribute"><i class="fa fa-list-ul fa-fw"></i> Atrybyty</a></li>
                         <!--<li><a href="/application/categories/index"><i class="fa fa-sitemap fa-fw"></i> Kategorie</a></li>-->
                         <li><a href="/product-type"><i class="fa fa-table fa-fw"></i> Typy Produktów</a></li>
-                        <li><a href="/product"><i class="fa fa-spinner fa-spin"></i> Produkty</a></li>
+                        <li><a href="#"><i class="fa fa-spinner fa-spin"></i> Produkty <i class="fa fa-spinner fa-spin"></i><span class="fa arrow"></span></a>
+                        	<?php 
+								echo $this->menu_helper();
+							?>
+                        </li>
                         <li><a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a></li>
                         <li><a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
                             <!-- .nav-second-level -->
@@ -306,8 +312,6 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        
-                        
                     </ul>
                     <!-- /#side-menu -->
                 </div>
@@ -317,6 +321,21 @@
         </nav>
 
         <div id="page-wrapper">
+            <?php
+            $flash = $this->flashMessenger();
+            $flash->setMessageOpenFormat('<div%s>
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                &times;
+            </button>
+            <ul><li>')
+                    ->setMessageSeparatorString('</li><li>')
+                    ->setMessageCloseString('</li></ul></div>');
+
+            echo $flash->render('error',   array('alert', 'alert-dismissable', 'alert-danger'));
+            echo $flash->render('info',    array('alert', 'alert-dismissable', 'alert-info'));
+            echo $flash->render('default', array('alert', 'alert-dismissable', 'alert-warning'));
+            echo $flash->render('success', array('alert', 'alert-dismissable', 'alert-success'));
+            ?>
             <div class="col-lg-12">
                 <?php echo $this->content; ?>
             </div>
